@@ -278,7 +278,7 @@ body.dark-theme {
   }
 }
 
-@media screen and ( 900px> width ) {
+@media screen and ( max-width: 900px ) {
   .objetAnimation,
   .containerAnimation {
     display: none !important;
