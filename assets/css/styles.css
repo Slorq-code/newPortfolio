@@ -279,6 +279,7 @@ body.dark-theme {
 }
 
 @media screen and ( 900px> width ) {
+  .objetAnimation,
   .containerAnimation {
     display: none;
   }
