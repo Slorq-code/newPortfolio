@@ -259,4 +259,4 @@ function ocultarElemento() {
         containerAnimation.style.display = 'none';
     }, 1000)
 }
-setTimeout(ocultarElemento, 15000);
+setTimeout(ocultarElemento, 9000);
