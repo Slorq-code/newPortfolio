@@ -110,8 +110,6 @@ img {
 }
 
 
-
-
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
   --title-color: hsl(var(--hue), 12%, 95%);
@@ -230,6 +228,62 @@ body.dark-theme {
 .check:checked:before {
   background: var(--first-color);
 }
+
+/*============ All animation ============*/
+
+.containerAnimation{
+    display: flex;
+    justify-content: center;
+    right: 2%;
+    bottom: 25%;
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+
+}
+.containerAnimation:hover {
+  opacity: 0;
+  transition: opacity 4s ease-in-out
+}
+.objetAnimation {
+    display: block;
+    height: 40px;
+    width: 20px !important;
+    position: relative;
+    animation: bounce 1.5s infinite;
+}
+@keyframes bounce{
+  10% {
+    height: 40px;
+    width: 20px;
+
+  }
+  30% {
+    height: 40px;
+    width: 15px;
+  }
+  50% {
+    height: 35px;
+    width: 25px;
+    transform: translateY(110px);
+  }
+  75% {
+    height: 40px;
+    width: 23px;
+
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media screen and ( 900px> width ) {
+  .containerAnimation {
+    display: none;
+  }
+}
+
 
 
 
@@ -616,12 +670,13 @@ body.dark-theme {
   background-color: var(--body-color);
 }
 
-/*============ TESTIMONIALS ============*/
+/*============ PROFILE ============*/
 
-
-
-
-
+.aboutMe {
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+}
 
 
 

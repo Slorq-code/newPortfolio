@@ -187,7 +187,11 @@ function idioma() {
 
 
 /*=============== DARK LIGHT THEME ===============*/
+
+// src="./assets/img/recursos/flechaAnimation2.png"
+
 const themeButton = document.getElementById('theme-button')
+const animationScroll = document.getElementById('objetAnimation')
 const darkTheme = 'dark-theme'
 const iconTheme = 'ri-sun-line'
 
@@ -201,9 +205,17 @@ const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'ri-moo
 
 // We validate if the user previously chose a topic
 if (selectedTheme) {
-  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-  themeButton.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](iconTheme)
+    // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+    themeButton.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](iconTheme)
+    cambiarImagenModo(selectedTheme)
+}
+function cambiarImagenModo(selectedTheme) {
+    if (selectedTheme === 'dark') {
+        animationScroll.src = '../assets/img/recursos/flechaAnimation2.png';
+    } else {
+        animationScroll.src = '../assets/img/recursos/flechaAnimation.png';
+    }
 }
 
 // Activate / deactivate the theme manually with the button
@@ -211,12 +223,15 @@ themeButton.addEventListener('click', () => {
     // Add or remove the dark / icon theme
     document.body.classList.toggle(darkTheme)
     themeButton.classList.toggle(iconTheme)
+    const currentTheme = getCurrentTheme();
+    cambiarImagenModo(currentTheme);
     // We save the theme and the current icon that the user chose
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
@@ -232,3 +247,16 @@ sr.reveal(`.profile__info-group`, {interval: 100, delay: 700})
 sr.reveal(`.profile__buttons`, {delay: 800})
 sr.reveal(`.filters__content`, {delay: 900})
 sr.reveal(`.filters`, {delay: 1000})
+
+
+/*=============== MOUSE ANIMATION ===============*/
+
+const containerAnimation = document.querySelector('.containerAnimation');
+function ocultarElemento() {
+    containerAnimation.style.opacity = '0';
+    containerAnimation.style.transition = 'opacity 1s';
+    setTimeout(function() {
+        containerAnimation.style.display = 'none';
+    }, 1000)
+}
+setTimeout(ocultarElemento, 15000);
