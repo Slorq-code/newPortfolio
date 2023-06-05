@@ -999,6 +999,7 @@ body.dark-theme {
     position: static;
   }
   .aboutMe__modal__container {
+    padding: 20px 0 0 0;
     flex-direction: column-reverse;
     gap: 2%;
   }
