@@ -1087,6 +1087,7 @@ body.dark-theme {
   }
   .bookshelf {
     width: 90%;
+    max-height: 100% !important;
   }
   .book1 {
     width: 70%;
