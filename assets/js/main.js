@@ -29,6 +29,10 @@ const openModalGit = document.getElementById("git");
 const openModalDart = document.getElementById("dart");
 const openModalFlutter = document.getElementById("flutter");
 const openModalReactNative = document.getElementById("reactNative");
+//aboutme
+const openModalPiano = document.getElementById("piano");
+const openModalBooks = document.getElementById("books");
+const openModalSports = document.getElementById("sports");
 
 const closeModalJavascript = document.getElementById("closeJavascript");
 const closeModalCss = document.getElementById("closeCss");
@@ -39,6 +43,10 @@ const closeModalGit = document.getElementById("closeGit");
 const closeModalDart = document.getElementById("closeDart");
 const closeModalFlutter = document.getElementById("closeFlutter");
 const closeModalReactNative = document.getElementById("closeReactNative");
+//about me
+const closeModalPiano = document.getElementById("closePiano");
+const closeModalBooks = document.getElementById("closeBooks");
+const closeModalSports = document.getElementById("closeSports");
 
 const skillsModalJavaScript = document.getElementById("skills-modal-javascript");
 const skillsModalCss = document.getElementById("skills-modal-css");
@@ -49,6 +57,10 @@ const skillsModalGit = document.getElementById("skills-modal-git");
 const skillsModalDart = document.getElementById("skills-modal-dart");
 const skillsModalFlutter = document.getElementById("skills-modal-flutter");
 const skillsModalReactNative = document.getElementById("skills-modal-reactNative");
+// about me
+const aboutMeModalPiano = document.getElementById("aboutMe-modal-piano");
+const aboutMeModalBooks = document.getElementById("aboutMe-modal-books");
+const aboutMeModalSports = document.getElementById("aboutMe-modal-sports");
 
 const overflow = document.getElementById("modalOverflow");
 
@@ -165,6 +177,49 @@ openModalReactNative.addEventListener("click", function() {
 
 closeModalReactNative.addEventListener("click", function() {
     skillsModalReactNative.classList.remove("show");
+    overflow.classList.remove("overFlowHidden")
+    document.documentElement.scrollTop = 1000;
+});
+
+
+
+
+
+/*=============== MODALS CONFIGURATION PIANO===============*/
+openModalPiano.addEventListener("click", function() {
+    aboutMeModalPiano.classList.add("show");
+    document.documentElement.scrollTop = 0;
+    overflow.classList.add("overFlowHidden")
+});
+
+closeModalPiano.addEventListener("click", function() {
+    aboutMeModalPiano.classList.remove("show");
+    overflow.classList.remove("overFlowHidden")
+    document.documentElement.scrollTop = 1000;
+});
+
+/*=============== MODALS CONFIGURATION BOOKS===============*/
+openModalBooks.addEventListener("click", function() {
+    aboutMeModalBooks.classList.add("show");
+    document.documentElement.scrollTop = 0;
+    overflow.classList.add("overFlowHidden")
+});
+
+closeModalBooks.addEventListener("click", function() {
+    aboutMeModalBooks.classList.remove("show");
+    overflow.classList.remove("overFlowHidden")
+    document.documentElement.scrollTop = 1000;
+});
+
+/*=============== MODALS CONFIGURATION SPORTS===============*/
+openModalSports.addEventListener("click", function() {
+    aboutMeModalSports.classList.add("show");
+    document.documentElement.scrollTop = 0;
+    overflow.classList.add("overFlowHidden")
+});
+
+closeModalSports.addEventListener("click", function() {
+    aboutMeModalSports.classList.remove("show");
     overflow.classList.remove("overFlowHidden")
     document.documentElement.scrollTop = 1000;
 });
