@@ -181,10 +181,6 @@ closeModalReactNative.addEventListener("click", function() {
     document.documentElement.scrollTop = 1000;
 });
 
-
-
-
-
 /*=============== MODALS CONFIGURATION PIANO===============*/
 openModalPiano.addEventListener("click", function() {
     aboutMeModalPiano.classList.add("show");
@@ -314,4 +310,4 @@ function ocultarElemento() {
         containerAnimation.style.display = 'none';
     }, 1000)
 }
-setTimeout(ocultarElemento, 9000);
+setTimeout(ocultarElemento, 7500);
