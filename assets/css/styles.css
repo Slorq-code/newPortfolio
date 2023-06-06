@@ -31,7 +31,7 @@
   --h3-font-size: 1rem;
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
+  --smaller-font-size: 1rem;
 }
 
 @media screen and (min-width: 968px) {
@@ -352,7 +352,7 @@ body.dark-theme {
 }
 
 .profile__profession {
-  font-size: var(--smaller-font-size);
+  font-size: 1rem;
   font-weight: 500;
   color: var(--text-color);
   margin-bottom: 1rem;
@@ -373,6 +373,9 @@ body.dark-theme {
 .profile__social-link:hover {
   color: var(--first-color);
 }
+.profile__social-link i {
+  font-size: 2rem;
+}
 
 .profile__info {
   grid-template-columns: repeat(3, max-content);
@@ -390,7 +393,7 @@ body.dark-theme {
 }
 
 .profile__info-description {
-  font-size: var(--smaller-font-size);
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -569,6 +572,7 @@ body.dark-theme {
   width: 55%;
   border: 10px solid var(--first-color);
   aspect-ratio: 1.5/1;
+  border-radius: 0.75rem;
 }
 
 .aboutMe__modal__container {
@@ -580,6 +584,7 @@ body.dark-theme {
   height: 80%;
   background-color: var(--body-color);
   border: 10px solid var(--first-color);
+  border-radius: 0.75rem;
 }
 .aboutMe__modal__content{
   display: flex;
@@ -789,10 +794,34 @@ body.dark-theme {
   -ms-transition: 1.5s;
   -o-transition: 1.5s;
   cursor: pointer;
+  padding: 1px;
+  height: 70px;
 }
 
-.skills__level {
-  font-size: var(--smaller-font-size);
+.skills__HTML i,
+.skills__CSS i,
+.skills__JAVASCRIPT i,
+.skills__REACT i,
+.skills__VUE i,
+.skills__GIT i,
+.skills__DART i,
+.skills__FLUTTER i,
+.skills__REACTNATIVE i {
+  display: none;
+}
+
+.skills__HTML:hover i,
+.skills__CSS:hover i,
+.skills__JAVASCRIPT:hover i,
+.skills__REACT:hover i,
+.skills__VUE:hover i,
+.skills__GIT:hover i,
+.skills__DART:hover i,
+.skills__FLUTTER:hover i,
+.skills__REACTNATIVE:hover i {
+  display: unset;
+  color: white;
+  font-size: 2.5rem;
 }
 
 /* Hide and show projects & skills */
