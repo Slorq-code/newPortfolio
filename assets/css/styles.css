@@ -100,7 +100,7 @@ img {
   position: absolute;
   top: 1.5rem;
   left: 0;
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: var(--title-color);
   transition: .3s;
 }
