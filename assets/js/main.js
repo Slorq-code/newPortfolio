@@ -64,161 +64,57 @@ const aboutMeModalSports = document.getElementById("aboutMe-modal-sports");
 
 const overflow = document.getElementById("modalOverflow");
 
-/*=============== MODALS CONFIGURATION  JAVASCRIPT===============*/
-openModalJavascript.addEventListener("click", function() {
-    skillsModalJavaScript.classList.add("show");
-    document.documentElement.scrollTop = 0;
-    overflow.classList.add("overFlowHidden")
-});
+function configureModal(openButton, closeButton, modal) {
+    openButton.addEventListener("click", function() {
+      modal.classList.add("show");
+      document.documentElement.scrollTop = 0;
+      overflow.classList.add("overFlowHidden");
+    });
+  
+    closeButton.addEventListener("click", function() {
+      modal.classList.remove("show");
+      overflow.classList.remove("overFlowHidden");
+      document.documentElement.scrollTop = 1000;
+    });
+  }
 
-closeModalJavascript.addEventListener("click", function() {
-    skillsModalJavaScript.classList.remove("show");
-    overflow.classList.remove("overFlowHidden")
-    document.documentElement.scrollTop = 1000;
-});
+  // Ejemplo de uso para el modal de JavaScript
+configureModal(openModalJavascript, closeModalJavascript, skillsModalJavaScript);
 
-/*=============== MODALS CONFIGURATION CSS===============*/
-openModalCss.addEventListener("click", function() {
-    skillsModalCss.classList.add("show");
-    document.documentElement.scrollTop = 0;
-    overflow.classList.add("overFlowHidden")
-});
+  // Ejemplo de uso para el modal de CSS
+configureModal(openModalCss, closeModalCss, skillsModalCss);
 
-closeModalCss.addEventListener("click", function() {
-    skillsModalCss.classList.remove("show");
-    overflow.classList.remove("overFlowHidden")
-    document.documentElement.scrollTop = 1000;
-});
+// Ejemplo de uso para el modal de HTML
+configureModal(openModalHtml, closeModalHtml, skillsModalHtml);
 
-/*=============== MODALS CONFIGURATION HTML===============*/
-openModalHtml.addEventListener("click", function() {
-    skillsModalHtml.classList.add("show");
-    document.documentElement.scrollTop = 0;
-    overflow.classList.add("overFlowHidden")
-});
+// Ejemplo de uso para el modal de React
+configureModal(openModalReact, closeModalReact, skillsModalReact);
 
-closeModalHtml.addEventListener("click", function() {
-    skillsModalHtml.classList.remove("show");
-    overflow.classList.remove("overFlowHidden")
-    document.documentElement.scrollTop = 1000;
-});
+// Ejemplo de uso para el modal de Vue
+configureModal(openModalVue, closeModalVue, skillsModalVue);
 
-/*=============== MODALS CONFIGURATION REACT===============*/
-openModalReact.addEventListener("click", function() {
-    skillsModalReact.classList.add("show");
-    document.documentElement.scrollTop = 0;
-    overflow.classList.add("overFlowHidden")
-});
+// Ejemplo de uso para el modal de Git
+configureModal(openModalGit, closeModalGit, skillsModalGit);
 
-closeModalReact.addEventListener("click", function() {
-    skillsModalReact.classList.remove("show");
-    overflow.classList.remove("overFlowHidden")
-    document.documentElement.scrollTop = 1000;
-});
+// Ejemplo de uso para el modal de Dart
+configureModal(openModalDart, closeModalDart, skillsModalDart);
 
-/*=============== MODALS CONFIGURATION VUE===============*/
-openModalVue.addEventListener("click", function() {
-    skillsModalVue.classList.add("show");
-    document.documentElement.scrollTop = 0;
-    overflow.classList.add("overFlowHidden")
-});
+// Ejemplo de uso para el modal de Flutter
+configureModal(openModalFlutter, closeModalFlutter, skillsModalFlutter);
 
-closeModalVue.addEventListener("click", function() {
-    skillsModalVue.classList.remove("show");
-    overflow.classList.remove("overFlowHidden")
-    document.documentElement.scrollTop = 1000;
-});
+// Ejemplo de uso para el modal de React Native
+configureModal(openModalReactNative, closeModalReactNative, skillsModalReactNative);
 
-/*=============== MODALS CONFIGURATION GIT===============*/
-openModalGit.addEventListener("click", function() {
-    skillsModalGit.classList.add("show");
-    document.documentElement.scrollTop = 0;
-    overflow.classList.add("overFlowHidden")
-});
+// Ejemplo de uso para el modal de Piano
+configureModal(openModalPiano, closeModalPiano, aboutMeModalPiano);
 
-closeModalGit.addEventListener("click", function() {
-    skillsModalGit.classList.remove("show");
-    overflow.classList.remove("overFlowHidden")
-    document.documentElement.scrollTop = 1000;
-});
+// Ejemplo de uso para el modal de Books
+configureModal(openModalBooks, closeModalBooks, aboutMeModalBooks);
 
-/*=============== MODALS CONFIGURATION DART===============*/
-openModalDart.addEventListener("click", function() {
-    skillsModalDart.classList.add("show");
-    document.documentElement.scrollTop = 0;
-    overflow.classList.add("overFlowHidden")
-});
+// Ejemplo de uso para el modal de Sports
+configureModal(openModalSports, closeModalSports, aboutMeModalSports);
 
-closeModalDart.addEventListener("click", function() {
-    skillsModalDart.classList.remove("show");
-    overflow.classList.remove("overFlowHidden")
-    document.documentElement.scrollTop = 1000;
-});
-
-/*=============== MODALS CONFIGURATION FLUTTER===============*/
-openModalFlutter.addEventListener("click", function() {
-    skillsModalFlutter.classList.add("show");
-    document.documentElement.scrollTop = 0;
-    overflow.classList.add("overFlowHidden")
-});
-
-closeModalFlutter.addEventListener("click", function() {
-    skillsModalFlutter.classList.remove("show");
-    overflow.classList.remove("overFlowHidden")
-    document.documentElement.scrollTop = 1000;
-});
-
-/*=============== MODALS CONFIGURATION REACTNATIVE===============*/
-openModalReactNative.addEventListener("click", function() {
-    skillsModalReactNative.classList.add("show");
-    document.documentElement.scrollTop = 0;
-    overflow.classList.add("overFlowHidden")
-});
-
-closeModalReactNative.addEventListener("click", function() {
-    skillsModalReactNative.classList.remove("show");
-    overflow.classList.remove("overFlowHidden")
-    document.documentElement.scrollTop = 1000;
-});
-
-/*=============== MODALS CONFIGURATION PIANO===============*/
-openModalPiano.addEventListener("click", function() {
-    aboutMeModalPiano.classList.add("show");
-    document.documentElement.scrollTop = 0;
-    overflow.classList.add("overFlowHidden")
-});
-
-closeModalPiano.addEventListener("click", function() {
-    aboutMeModalPiano.classList.remove("show");
-    overflow.classList.remove("overFlowHidden")
-    document.documentElement.scrollTop = 1000;
-});
-
-/*=============== MODALS CONFIGURATION BOOKS===============*/
-openModalBooks.addEventListener("click", function() {
-    aboutMeModalBooks.classList.add("show");
-    document.documentElement.scrollTop = 0;
-    overflow.classList.add("overFlowHidden")
-});
-
-closeModalBooks.addEventListener("click", function() {
-    aboutMeModalBooks.classList.remove("show");
-    overflow.classList.remove("overFlowHidden")
-    document.documentElement.scrollTop = 1000;
-});
-
-/*=============== MODALS CONFIGURATION SPORTS===============*/
-openModalSports.addEventListener("click", function() {
-    aboutMeModalSports.classList.add("show");
-    document.documentElement.scrollTop = 0;
-    overflow.classList.add("overFlowHidden")
-});
-
-closeModalSports.addEventListener("click", function() {
-    aboutMeModalSports.classList.remove("show");
-    overflow.classList.remove("overFlowHidden")
-    document.documentElement.scrollTop = 1000;
-});
+  
 
 
 /*=============== TRANSLATION THEME ===============*/
