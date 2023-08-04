@@ -342,7 +342,7 @@ function cambiarValorYMostrar() {
         elementsToUpdate.forEach((element) => {
             element.classList.remove('earthquake-animation');
         });
-    }, 2000);
+    }, 1000);
 
 
 
