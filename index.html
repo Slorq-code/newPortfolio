@@ -43,7 +43,8 @@
                         </div>
                     </div>
                     <h2 class="profile__name">Andrés Rodríguez.</h2>
-                    <h3 class="profile__profession">Front-end and mobile developer<br> andresfra65@gmail.com </h3>
+                    <h3 id="Perfil" class="profile__profession profile__profile"></h3>
+                    <h3 class="profile__profession">andresfra65@gmail.com</h3>
                     <ul class="profile__social">
                         <a href="https://www.instagram.com/afr.rorro/" target="_blank" class="profile__social-link">
                             <i class="ri-instagram-line"></i>
@@ -59,25 +60,23 @@
                 <div class="profile__info grid">
                     <div class="profile__info-group">
                         <h3 class="profile__info-number">1.7</h3>
-                        <p class="profile__info-description">
-                            Years of<br> Experience.
+                        <p  id="Experiencia" class="profile__info-description"> 
                         </p>
                     </div>
                     <div class="profile__info-group">
                         <h3 class="profile__info-number">+20</h3>
-                        <p class="profile__info-description">
-                            Big projects <br> Completed.
+                        <p  id="NumeroDeProyectos" class="profile__info-description"> 
                         </p>
                     </div>
                     <div class="profile__info-group">
                         <h3 class="profile__info-number">+15</h3>
-                        <p class="profile__info-description">Satisfies <br> Customers</p>
+                        <p  id="NumeroDeClientes" class="profile__info-description"> 
+                        </p>
                     </div>
                 </div>
                 <div class="profile__buttons">
                     <!-- CV -->
-                    <a href="assets/pdf/AndresCV2023.pdf" class="button" target="_blank">
-                        Download CV <i class="ri-download-line"></i>
+                    <a id="BotonCV" href="assets/pdf/AndresCV2023.pdf" class="button" target="_blank">
                     </a>
                     <div class="profile__buttons-small">
                         <!--number phone-->
@@ -94,14 +93,11 @@
             <section class="filters container">
                 <!--=============== FILTERS TABS ===============-->
                 <ul class="filters__content">
-                    <button class="filters__button filter-tab-active" data-target="#projects">
-                        Projects
+                    <button  id="Proyectos" class="filters__button filter-tab-active" data-target="#projects">
                     </button>
-                    <button class="filters__button" data-target="#skills">
-                        Skills
+                    <button  id="Habilidades" class="filters__button" data-target="#skills">
                     </button>
-                    <button class="filters__button" data-target="#AboutMe">
-                        Me
+                    <button  id="Yo" class="filters__button" data-target="#AboutMe">
                     </button>
                 </ul>
                 <div class="filters__sections">
@@ -111,7 +107,7 @@
                             <img src="assets/img/Proyectos/GuitarLAReSize.jpg" alt="Proyectos" class="projects__img">
                             <div class="projects__modal">
                                 <div>
-                                    <span class="projects__subtitle">E-commerce</span>
+                                    <span id="Proyecto1" class="projects__subtitle"></span>
                                     <h3 class="projects__title">HTML + SCSS</h3>
                                     <a href="https://csscurse18.vercel.app/index.html" target="_blank"
                                         class="projects__button button button__small">
@@ -128,7 +124,7 @@
                             <img src="assets/img/Proyectos/AppDeliveryReSize.jpg" alt="Proyectos" class="projects__img">
                             <div class="projects__modal">
                                 <div>
-                                    <span class="projects__subtitle">Delivery app</span>
+                                    <span id="Proyecto2" class="projects__subtitle"></span>
                                     <h3 class="projects__title">HTML + SCSS</h3>
                                     <a href="https://csscurse11.vercel.app" target="_blank"
                                         class="projects__button button button__small">
@@ -145,7 +141,7 @@
                             <img src="assets/img/Proyectos/CheetosReSize.jpg" alt="Proyectos" class="projects__img">
                             <div class="projects__modal">
                                 <div>
-                                    <span class="projects__subtitle">Blog</span>
+                                    <span id="Proyecto3" class="projects__subtitle"></span>
                                     <h3 class="projects__title">React.js</h3>
                                     <a href="https://chesterdrop.com/" target="_blank"
                                         class="projects__button button button__small">
@@ -158,20 +154,20 @@
                             <img src="assets/img/Proyectos/NoelReSize.jpg" alt="" class="projects__img">
                             <div class="projects__modal">
                                 <div>
-                                    <span class="projects__subtitle">Contest website</span>
+                                    <span id="Proyecto4" class="projects__subtitle"></span>
                                     <h3 class="projects__title">Vue.js</h3>
                                     <a href="https://noel-2023.vercel.app/" target="_blank"
-                                        class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
+                                    class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
                             </div>
-                        </article>
+                        </div>
+                    </article>
                         <article class="projects__card">
                             <img src="assets/img/Proyectos/CapturaAppNews.jpg" alt="proyecto" class="projects__img">
                             <div class="projects__modal">
                                 <div>
-                                    <span class="projects__subtitle">News app</span>
+                                    <span id="Proyecto6" class="projects__subtitle"></span>
                                     <h3 class="projects__title">Dart + Flutter</h3>
                                     <a href="https://www.youtube.com/watch?v=TlBG-_ooO-k" target="_blank"
                                         class="projects__button button button__small">
@@ -188,7 +184,7 @@
                             <img src="assets/img/Proyectos/CatApp.png" alt="proyecto" class="projects__img">
                             <div class="projects__modal">
                                 <div>
-                                    <span class="projects__subtitle">Cat app</span>
+                                    <span id="Proyecto5" class="projects__subtitle"></span>
                                     <h3 class="projects__title">Dart + Flutter</h3>
                                     <a href="https://www.youtube.com/watch?v=qiFoz2mWEx8" target="_blank"
                                         class="projects__button button button__small">
@@ -205,7 +201,7 @@
                     <!--=============== SKILLS ===============-->
                     <div class="skills__content grid" data-content id="skills">
                         <div class="skills__area">
-                            <h3 class="skills__title">Front-end development.</h3>
+                            <h3 id="TituloFrontend" class="skills__title"></h3>
                             <div class="skills__box">
                                 <div class="skills__group">
                                     <div class="skills__data">
@@ -256,7 +252,7 @@
                             </div>
                         </div>
                         <div class="skills__area">
-                            <h3 class="skills__title">Mobile development</h3>
+                            <h3 id="TituloMobile" class="skills__title"></h3>
                             <div class="skills__box">
                                 <div class="skills__group">
                                     <div class="skills__data">
@@ -293,23 +289,22 @@
                             <img class="aboutMe__container__img" src="./assets/img/perfil.png" alt="Yo">
                         </div>
                         <div class="aboutMe__containerOptions">
-                            <h2>Get to know me.</h2>
+                            <h2 id="TituloTextoSobreMi" ></h2>
                             <div class="aboutMe__container__boxs texto">
-                                <p class="aboutMe__texto">I think that our tastes say a lot about ourselves. Check out some of mine, we might even agree on one of them! 😏
-                                </p>
+                                <p id="TextoSobremi" class="aboutMe__texto"></p>
                             </div>
                             <div class="aboutMe__container__boxs options">
                                 <div class="aboutMe__optiones piano button__gray" id="piano">
                                     <i class="ri-music-line"></i>
-                                    <p>Piano</p>
+                                    <p id="Piano" ></p>
                                 </div>
                                 <div class="aboutMe__optiones libros button__gray" id="books">
                                     <i class="ri-git-repository-line"></i>
-                                    <p>Read</p>
+                                    <p id="Lectura"></p>
                                 </div>
                                 <div class="aboutMe__optiones actividades button__gray" id="sports">
                                     <i class="ri-basketball-line"></i>
-                                    <p>Sports</p>
+                                    <p id="Deporte" ></p>
                                 </div>
                             </div>
                             <div class="aboutMe__container__boxs ">
@@ -392,17 +387,7 @@
             <i class="ri-close-circle-line" id="closePiano"></i>
             <div class="aboutMe__modal__content" >
                 <div class="pianoText">
-                    <p>
-                        I love playing the piano, I'm not a genius or anything like that, but it relaxes me a lot to do it.
-                        <br>
-                        I learned since I was a child that a clear mind is much more productive and the piano helps me with that in my free time.
-                        <br>
-                        I've been playing since I was a child, casually and without instruction... but with a lot of dedication.
-                        <br>
-                        <a class="referenciasPiano" href="https://www.youtube.com/watch?v=6El8B8hJ4Sg" target="_blank" >Vivaldi</a>
-                        and
-                        <a class="referenciasPiano" href="https://www.youtube.com/watch?v=TbOZXL8Vz4w&t=847s" target="_blank" >Chopin</a>
-                        are among my favorite pianists.
+                    <p id="PianoTexto" >
                     </p>
                 </div>
             </div>
@@ -418,8 +403,7 @@
                     <div class="front"></div>
                 </div>
                 <div class="review" >
-                    <p>
-                        Drácula possesses an immersive narrative that captivates me. After reading it, I thoroughly enjoy pondering over the events and circumstances that might have led people of that era to resort to myths like this one. It's fascinating to contemplate what events or situations could have generated the need to create such powerful and captivating stories like that of the legendary Dracula.
+                    <p id="LecturaTexto1" >
                     </p>
                 </div>
             </div>
@@ -428,8 +412,7 @@
                     <div class="front"></div>
                 </div>
                 <div class="review" >
-                    <p>
-                        The Divine Comedy recounts a journey through hell, purgatory, and paradise. Over the years, it has been interpreted literally due to Dante's detailed accounts. However, what I find most fascinating is the implicit satire within the work, where Dante mocks various political and social situations of his time.
+                    <p id="LecturaTexto2" >
                     </p>
                 </div>
             </div>

@@ -358,6 +358,10 @@ body.dark-theme {
   margin-bottom: 1rem;
 }
 
+.profile__profile {
+  margin-bottom: 0rem !important;
+}
+
 .profile__social {
   display: flex;
   justify-content: center;
@@ -395,6 +399,7 @@ body.dark-theme {
 .profile__info-description {
   font-size: 1rem;
   font-weight: 500;
+  max-width: 135px;
 }
 
 .profile__buttons, 
@@ -929,9 +934,23 @@ body.dark-theme {
 
 
 
+/*=============== Animacion terreemoto cambio de idioma ===============*/
 
 
+@keyframes earthquake {
+  0% { transform: translate(0, 0); }
+  15% { transform: translate(-4px, 4px); }
+  30% { transform: translate(4px, -4px); }
+  45% { transform: translate(-4px, -4px); }
+  60% { transform: translate(4px, 4px); }
+  75% { transform: translate(-4px, -4px); }
+  90% { transform: translate(4px, 4px); }
+  100% { transform: translate(0, 0); }
+}
 
+.earthquake-animation {
+  animation: earthquake 0.6s;
+}
 
 /*=============== FOOTER ===============*/
 
@@ -1133,5 +1152,8 @@ body.dark-theme {
     -o-transform: translate( -50%, -50%) scale(0.77);
     transform-origin: unset;
     background-size: contain;
-}
+  }
+  .profile__info-description {
+      max-width: 95px;
+  }
 }
