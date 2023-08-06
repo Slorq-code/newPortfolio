@@ -82,9 +82,7 @@ const overflow = document.getElementById("modalOverflow");
         overflow.classList.remove("overFlowHidden");
         document.documentElement.scrollTop = 1000;
       });
-    } else {
-      console.log("No");
-    }
+    } else {}
   }
 
   // Example of use for the JavaScript
@@ -173,9 +171,7 @@ function cambiarImagenModo(selectedTheme) {
       } else {
         animationScroll.src = '../assets/img/recursos/flechaAnimation.png';
       }
-    } else {
-      console.error("Error: animationScroll is null, undefined, or selectedTheme is null or undefined.");
-    }
+    } else {}
   }
 
 // Activate / deactivate the theme manually with the button
@@ -233,9 +229,6 @@ let valorVariable = true;
 function cambiarValorYMostrar() {
     // Cambiar el valor de la variable
     valorVariable = !valorVariable; // Si era true, ahora será false, y viceversa
-
-    // Mostrar el valor de la variable en la consola
-    console.log("Nuevo valor de la variable: " + valorVariable);
 
     // Cargar el contenido del JSON según el idioma seleccionado
     const langFile = valorVariable ? 'assets/json/textos_espanol.json' : 'assets/json/textos_ingles.json';
