@@ -255,7 +255,7 @@ function cambiarValorYMostrar() {
             const TituloTextoSobreMi = document.getElementById("TituloTextoSobreMi");
             const Piano = document.getElementById("Piano");
             const TextoSobremi = document.getElementById("TextoSobremi");
-            const DeporteTexto = document.getElementById("DeporteTexto");
+            // const DeporteTexto = document.getElementById("DeporteTexto");
             const BotonDeContacto = document.getElementById("BotonDeContacto");
             const Lectura = document.getElementById("Lectura");
             const LecturaTexto1 = document.getElementById("LecturaTexto1");
@@ -305,7 +305,7 @@ function cambiarValorYMostrar() {
             LecturaTexto1.textContent = data.LecturaTexto1;
             LecturaTexto2.textContent = data.LecturaTexto2;
             Deporte.textContent = data.Deporte;
-            DeporteTexto.textContent = data.DeporteTexto;
+          //  DeporteTexto.textContent = data.DeporteTexto;
             BotonDeContacto.textContent = data.BotonDeContacto;
             TextoFooter.textContent = data.TextoFooter;
         })
@@ -332,6 +332,8 @@ function cambiarValorYMostrar() {
         Deporte,
         Lectura,
         Piano,
+        BotonDeContacto,
+        TextoFooter
     ];
 
     // Agregar la clase earthquake-animation a cada elemento
@@ -356,3 +358,30 @@ checkbox.addEventListener("change", cambiarValorYMostrar);
 
 // Cargar el idioma inicial al cargar la página
 cambiarValorYMostrar();
+
+
+
+//  ================== botton para las animaciones de contact me
+
+
+function scrollTopAndAnimate(...ids) {
+  const scrollToTop = () => {
+    if (document.documentElement.scrollTop > 0) {
+      document.documentElement.scrollBy(0, -50);
+      requestAnimationFrame(scrollToTop);
+    } else {
+      // Al llegar al tope, agregar la clase para iniciar la animación a los elementos seleccionados por sus IDs
+      ids.forEach((id) => {
+        const elementToAnimate = document.getElementById(id);
+        if (elementToAnimate) {
+          elementToAnimate.classList.add("earthquake-animation2");
+          setTimeout(() => {
+            elementToAnimate.classList.remove("earthquake-animation2");
+          }, 2000);
+        }
+      });
+    }
+  };
+  
+  scrollToTop();
+}

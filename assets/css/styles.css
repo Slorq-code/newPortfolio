@@ -952,6 +952,10 @@ body.dark-theme {
   animation: earthquake 0.6s;
 }
 
+.earthquake-animation2 {
+  animation: earthquake 3s;
+}
+
 /*=============== FOOTER ===============*/
 
 .footer__copy {
@@ -999,9 +1003,6 @@ body.dark-theme {
     transform: translateY(-15px); /* Posición intermedia: se mueve hacia arriba */
   }
 }
-
-
-
 
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {

@@ -44,12 +44,12 @@
                     </div>
                     <h2 class="profile__name">Andrés Rodríguez.</h2>
                     <h3 id="Perfil" class="profile__profession profile__profile"></h3>
-                    <h3 class="profile__profession">andresfra65@gmail.com</h3>
+                    <h3 class="profile__profession" id="element-to-animate1">andresfra65@gmail.com</h3>
                     <ul class="profile__social">
-                        <a href="https://www.instagram.com/afr.rorro/" target="_blank" class="profile__social-link">
+                        <a id="element-to-animate2" href="https://www.instagram.com/afr.rorro/" target="_blank" class="profile__social-link">
                             <i class="ri-instagram-line"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/and-rod/" target="_blank" class="profile__social-link">
+                        <a id="element-to-animate3" href="https://www.linkedin.com/in/and-rod/" target="_blank" class="profile__social-link">
                             <i class="ri-linkedin-box-line"></i>
                         </a>
                         <a href="https://github.com/Slorq-code" target="_blank" class="profile__social-link">
@@ -80,7 +80,7 @@
                     </a>
                     <div class="profile__buttons-small">
                         <!--number phone-->
-                        <a href="https://api.whatsapp.com/send?phone=573043306156&text=Hola Andres, tengo algo que preguntarte!"
+                        <a id="element-to-animate5" href="https://api.whatsapp.com/send?phone=573043306156&text=Hola Andres, tengo algo que preguntarte!"
                             target="_blank" class="button button__small button__gray">
                             <i class="ri-whatsapp-line"></i>
                         </a>
@@ -308,8 +308,11 @@
                                 </div>
                             </div>
                             <div class="aboutMe__container__boxs ">
-                                <div class="button">
-                                    Contact me
+                                <div 
+                                    id="BotonDeContacto" 
+                                    class="button" 
+                                    onclick="scrollTopAndAnimate('element-to-animate1','element-to-animate2','element-to-animate3','element-to-animate5',)" 
+                                >
                                 </div>
                             </div>
                         </div>
@@ -321,7 +324,7 @@
     <!--=============== FOOTER ===============-->
     <footer class="footer container">
         <span class="footer__copy">
-            &#169; Andrés F. Rodríguez A. | Todos los derechos reservados.
+            &#169; Andrés F. Rodríguez A. | <span id="TextoFooter" ></span>
         </span>
     </footer>
     <!--=============== SKILLS MODALS ===============-->
