@@ -962,6 +962,47 @@ body.dark-theme {
   color: var(--text-color-light);
 }
 
+
+/*=============== Es.HTML ===============*/
+
+.containerEs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 100vh;
+  width: 100%;
+}
+
+.containerEsAnimation {
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+  position: relative;
+  animation: floatAnimation 4s infinite ease-in-out;
+}
+
+.containerEs p {
+  padding: 10px;
+}
+.containerEs a {
+  animation: floatAnimation 3.5s infinite ease-in-out;
+}
+
+
+@keyframes floatAnimation {
+  0%, 100% {
+    transform: translateY(0); /* Posición inicial y final: no se mueve en el eje Y */
+  }
+  50% {
+    transform: translateY(-15px); /* Posición intermedia: se mueve hacia arriba */
+  }
+}
+
+
+
+
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
   width: .6rem;
@@ -979,8 +1020,6 @@ body.dark-theme {
 }
 
 /*=============== BREAKPOINTS ===============*/
-
-
 
 
 /* For small devices */

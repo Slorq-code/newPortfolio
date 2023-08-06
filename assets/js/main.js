@@ -69,18 +69,22 @@ const overflow = document.getElementById("modalOverflow");
 
  // Reusable function for opening and closing of the modals
  
-function configureModal(openButton, closeButton, modal) {
-    openButton.addEventListener("click", function() {
-      modal.classList.add("show");
-      document.documentElement.scrollTop = 0;
-      overflow.classList.add("overFlowHidden");
-    });
-  
-    closeButton.addEventListener("click", function() {
-      modal.classList.remove("show");
-      overflow.classList.remove("overFlowHidden");
-      document.documentElement.scrollTop = 1000;
-    });
+ function configureModal(openButton, closeButton, modal) {
+    if (openButton && closeButton && modal) {
+      openButton.addEventListener("click", function() {
+        modal.classList.add("show");
+        document.documentElement.scrollTop = 0;
+        overflow.classList.add("overFlowHidden");
+      });
+    
+      closeButton.addEventListener("click", function() {
+        modal.classList.remove("show");
+        overflow.classList.remove("overFlowHidden");
+        document.documentElement.scrollTop = 1000;
+      });
+    } else {
+      console.log("No");
+    }
   }
 
   // Example of use for the JavaScript
@@ -161,13 +165,18 @@ if (selectedTheme) {
     themeButton.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](iconTheme)
     cambiarImagenModo(selectedTheme)
 }
+
 function cambiarImagenModo(selectedTheme) {
-    if (selectedTheme === 'dark') {
+    if (animationScroll && selectedTheme !== null && selectedTheme !== undefined) {
+      if (selectedTheme === 'dark') {
         animationScroll.src = '../assets/img/recursos/flechaAnimation2.png';
-    } else {
+      } else {
         animationScroll.src = '../assets/img/recursos/flechaAnimation.png';
+      }
+    } else {
+      console.error("Error: animationScroll is null, undefined, or selectedTheme is null or undefined.");
     }
-}
+  }
 
 // Activate / deactivate the theme manually with the button
 themeButton.addEventListener('click', () => {
