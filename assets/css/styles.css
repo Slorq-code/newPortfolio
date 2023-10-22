@@ -1356,6 +1356,7 @@ body.dark-theme {
 
 @media screen and (max-width: 992px) {
 
+  .skills__modal__containerEspañol,
   .skills__modal__containerEnglish {
     width: 85%;
   }
