@@ -268,6 +268,8 @@ function cambiarValorYMostrar() {
             const TextCompañerismo = document.getElementById("TextCompañerismo");
             const TextCuriosidad = document.getElementById("TextCuriosidad");
             const TextTemerario = document.getElementById("TextTemerario");
+            const TextEspañol = document.getElementById("TextEspañol");
+            const TextIngles = document.getElementById("TextIngles");
             Perfil.textContent = data.Perfil;
             Experiencia.textContent = data.Experiencia;
             NumeroDeProyectos.textContent = data.NumeroDeProyectos;
@@ -312,7 +314,7 @@ function cambiarValorYMostrar() {
             Deporte.textContent = data.Deporte;
 
           //  DeporteTexto.textContent = data.DeporteTexto;
-          
+
             BotonDeContacto.textContent = data.BotonDeContacto;
             TextoFooter.textContent = data.TextoFooter;
             SpamEspañol.textContent = data.SpamEspañol;
@@ -320,6 +322,8 @@ function cambiarValorYMostrar() {
             TextCompañerismo.textContent = data.TextCompañerismo;
             TextCuriosidad.textContent = data.TextCuriosidad;
             TextTemerario.textContent = data.TextTemerario;
+            TextEspañol.textContent = data.Español;
+            TextIngles.textContent = data.Ingles;
         })
         .catch(error => console.log(error));
 
@@ -351,7 +355,9 @@ function cambiarValorYMostrar() {
         TextCuriosidad,
         TextPerseverancia,
         TextCompañerismo,
-        TextTemerario
+        TextTemerario,
+        TextIngles,
+        TextEspañol
     ];
 
     // Agregar la clase earthquake-animation a cada elemento
