@@ -13,8 +13,11 @@
     "Proyecto4": "Sitio web de concursos",
     "Proyecto5": "Aplicación de gatos",
     "Proyecto6": "Aplicación de noticias",
-    "TituloFrontend": "Desarrollo Front-end.",
+    "TituloFrontend": "Desarrollo Front-end",
     "TituloMobile": "Desarrollo Mobile",
+    "TituloLenguas":"Idiomas",
+    "TituloHabilidadesBlandas":"Habilidades blandas",
+    "SpamEspañol" : "Mi lengua madre es el Español.",
     "TituloSobreMi": "Yo",
     "TituloTextoSobreMi": "Conoceme.",
     "TextoSobremi": "Pienso que nuestros gustos dicen mucho sobre nosotros mismos; Chequea alguno de los míos ¿Quién sabe?, ¡Hasta de pronto coincidimos en alguno! 😏",
@@ -27,5 +30,9 @@
     "Deporte": "Deportes",
     "DeporteTexto": "Esta seccion esta en construccion",
     "BotonDeContacto": "Contactame",
-    "TextoFooter": "Todos los derechos reservados."
+    "TextoFooter": "Todos los derechos reservados.",
+    "TextPerseverancia":"Perseverancia",
+    "TextCompañerismo":"Compañerismo",
+    "TextCuriosidad":"Curiosidad",
+    "TextTemerario":"Valentia"
 }

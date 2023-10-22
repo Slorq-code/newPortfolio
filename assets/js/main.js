@@ -1,21 +1,29 @@
 /*=============== FILTERS TABS ===============*/
 const tabs = document.querySelectorAll('[data-target]'),
-        tabContents = document.querySelectorAll('[data-content]')
+      tabContents = document.querySelectorAll('[data-content]')
 
-tabs.forEach(tab =>{
-    tab.addEventListener('click', () =>{
-        const target = document.querySelector(tab.dataset.target)
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = document.querySelector(tab.dataset.target)
 
-        tabContents.forEach(tc =>{
-            tc.classList.remove('filters__active')
-        })
-        target.classList.add('filters__active')
-
-        tabs.forEach(t =>{
-            t.classList.remove('filter-tab-active')
-        })
-        tab.classList.add('filter-tab-active')
+    tabContents.forEach(tc => {
+      tc.classList.remove('filters__active')
     })
+
+    setTimeout(() => {
+      tabContents.forEach(tc => {
+        tc.style.display = 'none';
+      })
+      target.style.display = 'grid';
+      target.classList.add('filters__active');
+    }, 500);
+
+    tabs.forEach(t => {
+      t.classList.remove('filter-tab-active')
+    })
+
+    tab.classList.add('filter-tab-active')
+  })
 })
 
 /*=============== Modals ===============*/
@@ -29,6 +37,12 @@ const openModalGit = document.getElementById("git");
 const openModalDart = document.getElementById("dart");
 const openModalFlutter = document.getElementById("flutter");
 const openModalReactNative = document.getElementById("reactNative");
+const openModalEnglish = document.getElementById("english");
+const openModalEspañol = document.getElementById("español");
+const openModalCompañerismo = document.getElementById("Compañerismo");
+const openModalPerseveracia = document.getElementById("Perseverancia");
+const openModalCuriosidad = document.getElementById("Curiosidad");
+const openModalValentia = document.getElementById("Temerario");
 
 const closeModalJavascript = document.getElementById("closeJavascript");
 const closeModalCss = document.getElementById("closeCss");
@@ -39,6 +53,12 @@ const closeModalGit = document.getElementById("closeGit");
 const closeModalDart = document.getElementById("closeDart");
 const closeModalFlutter = document.getElementById("closeFlutter");
 const closeModalReactNative = document.getElementById("closeReactNative");
+const closeModalEnglish = document.getElementById("closeEnglish");
+const closeModalEspañol = document.getElementById("closeEspañol");
+const closeModalPerseverancia = document.getElementById("closeCompañerismo");
+const closeModalCompañerismo = document.getElementById("closePerseverancia");
+const closeModalCuriosidad = document.getElementById("closeCuriosidad");
+const closeModalTemerario = document.getElementById("closeDareDevil");
 
 const skillsModalJavaScript = document.getElementById("skills-modal-javascript");
 const skillsModalCss = document.getElementById("skills-modal-css");
@@ -49,6 +69,12 @@ const skillsModalGit = document.getElementById("skills-modal-git");
 const skillsModalDart = document.getElementById("skills-modal-dart");
 const skillsModalFlutter = document.getElementById("skills-modal-flutter");
 const skillsModalReactNative = document.getElementById("skills-modal-reactNative");
+const skillsModalEnglish = document.getElementById("skills-modal-English");
+const skillsModalEspañol = document.getElementById("skills-modal-Español");
+const skillsModalPerseverancia = document.getElementById("skills-modal-compañerismo");
+const skillsModalCompañerismo = document.getElementById("skills-modal-Perseverancia");
+const skillsModalCuriosidad = document.getElementById("skills-modal-curiosidad");
+const skillsModalTemerario = document.getElementById("skills-modal-daredevil");
 
 
 //aboutme
@@ -75,6 +101,7 @@ const overflow = document.getElementById("modalOverflow");
         modal.classList.add("show");
         document.documentElement.scrollTop = 0;
         overflow.classList.add("overFlowHidden");
+        console.log("intento de apertura")
       });
     
       closeButton.addEventListener("click", function() {
@@ -85,58 +112,28 @@ const overflow = document.getElementById("modalOverflow");
     } else {}
   }
 
-  // Example of use for the JavaScript
 configureModal(openModalJavascript, closeModalJavascript, skillsModalJavaScript);
-
-  // Example of use for the CSS
 configureModal(openModalCss, closeModalCss, skillsModalCss);
-
-// Example of use for the HTML
 configureModal(openModalHtml, closeModalHtml, skillsModalHtml);
-
-// Example of use for the React
 configureModal(openModalReact, closeModalReact, skillsModalReact);
-
-// Example of use for the Vue
 configureModal(openModalVue, closeModalVue, skillsModalVue);
-
-// Example of use for the Git
 configureModal(openModalGit, closeModalGit, skillsModalGit);
-
-// Example of use for the Dart
 configureModal(openModalDart, closeModalDart, skillsModalDart);
-
-// Example of use for the Flutter
 configureModal(openModalFlutter, closeModalFlutter, skillsModalFlutter);
-
-// Example of use for the React Native
 configureModal(openModalReactNative, closeModalReactNative, skillsModalReactNative);
+configureModal(openModalEnglish, closeModalEnglish, skillsModalEnglish);
+configureModal(openModalEspañol, closeModalEspañol, skillsModalEspañol);
 
-// Example of use for the Piano
+configureModal(openModalCompañerismo, closeModalPerseverancia, skillsModalPerseverancia);
+configureModal(openModalPerseveracia, closeModalCompañerismo, skillsModalCompañerismo);
+configureModal(openModalCuriosidad, closeModalCuriosidad, skillsModalCuriosidad);
+configureModal(openModalValentia, closeModalTemerario, skillsModalTemerario);
+
+
 configureModal(openModalPiano, closeModalPiano, aboutMeModalPiano);
-
-// Example of use for the Books
 configureModal(openModalBooks, closeModalBooks, aboutMeModalBooks);
-
-// Example of use for the Sports
 configureModal(openModalSports, closeModalSports, aboutMeModalSports);
 
-  
-
-/*=============== TRANSLATION THEME ===============*/
-
-// let check=document.querySelector(".check");
-
-// check.addEventListener("click", idioma);
-
-// function idioma() {
-//     let id=check.checked;
-//     if(id==true) {
-//         location.href="../../es.html"
-//     }else {
-//         location.href="../../index.html"
-//     }
-// }
 
 
 /*=============== DARK LIGHT THEME ===============*/
@@ -255,7 +252,8 @@ function cambiarValorYMostrar() {
             const TituloTextoSobreMi = document.getElementById("TituloTextoSobreMi");
             const Piano = document.getElementById("Piano");
             const TextoSobremi = document.getElementById("TextoSobremi");
-            // const DeporteTexto = document.getElementById("DeporteTexto");
+            const TituloLenguas = document.getElementById("TituloLenguas");
+            const TituloHabilidadesBlandas = document.getElementById("TituloHabilidadesBlandas");
             const BotonDeContacto = document.getElementById("BotonDeContacto");
             const Lectura = document.getElementById("Lectura");
             const LecturaTexto1 = document.getElementById("LecturaTexto1");
@@ -265,6 +263,11 @@ function cambiarValorYMostrar() {
             const vivaldi = document.createElement("a");
             const chopin = document.createElement("a");
             const TextoFooter = document.getElementById("TextoFooter");
+            const SpamEspañol = document.getElementById("SpamEspañol");
+            const TextPerseverancia = document.getElementById("TextPerseverancia");
+            const TextCompañerismo = document.getElementById("TextCompañerismo");
+            const TextCuriosidad = document.getElementById("TextCuriosidad");
+            const TextTemerario = document.getElementById("TextTemerario");
             Perfil.textContent = data.Perfil;
             Experiencia.textContent = data.Experiencia;
             NumeroDeProyectos.textContent = data.NumeroDeProyectos;
@@ -284,6 +287,8 @@ function cambiarValorYMostrar() {
             Proyecto5.textContent = data.Proyecto5;
             TituloFrontend.textContent = data.TituloFrontend;
             TituloMobile.textContent = data.TituloMobile;
+            TituloLenguas.textContent = data.TituloLenguas;
+            TituloHabilidadesBlandas.textContent = data.TituloHabilidadesBlandas;
             TituloTextoSobreMi.textContent = data.TituloTextoSobreMi;
             TextoSobremi.textContent = data.TextoSobremi;
             Piano.textContent = data.Piano;
@@ -305,9 +310,16 @@ function cambiarValorYMostrar() {
             LecturaTexto1.textContent = data.LecturaTexto1;
             LecturaTexto2.textContent = data.LecturaTexto2;
             Deporte.textContent = data.Deporte;
+
           //  DeporteTexto.textContent = data.DeporteTexto;
+          
             BotonDeContacto.textContent = data.BotonDeContacto;
             TextoFooter.textContent = data.TextoFooter;
+            SpamEspañol.textContent = data.SpamEspañol;
+            TextPerseverancia.textContent = data.TextPerseverancia;
+            TextCompañerismo.textContent = data.TextCompañerismo;
+            TextCuriosidad.textContent = data.TextCuriosidad;
+            TextTemerario.textContent = data.TextTemerario;
         })
         .catch(error => console.log(error));
 
@@ -327,13 +339,19 @@ function cambiarValorYMostrar() {
         Yo,
         TituloFrontend,
         TituloMobile,
+        TituloLenguas,
+        TituloHabilidadesBlandas,
         TextoSobremi,
         TituloTextoSobreMi,
         Deporte,
         Lectura,
         Piano,
         BotonDeContacto,
-        TextoFooter
+        TextoFooter,
+        TextCuriosidad,
+        TextPerseverancia,
+        TextCompañerismo,
+        TextTemerario
     ];
 
     // Agregar la clase earthquake-animation a cada elemento
@@ -385,3 +403,13 @@ function scrollTopAndAnimate(...ids) {
   
   scrollToTop();
 }
+
+
+// ======================================================  efecto Splash
+
+window.addEventListener('load', function() {
+  const splashContent = document.querySelector('.splash-content');
+  setTimeout(function() {
+      splashContent.classList.add('hidden');
+  }, 8000); // Ajusta el tiempo según tu preferencia
+});
