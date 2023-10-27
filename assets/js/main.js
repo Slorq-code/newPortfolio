@@ -95,22 +95,26 @@ const overflow = document.getElementById("modalOverflow");
 
  // Reusable function for opening and closing of the modals
  
+
  function configureModal(openButton, closeButton, modal) {
-    if (openButton && closeButton && modal) {
-      openButton.addEventListener("click", function() {
-        modal.classList.add("show");
-        document.documentElement.scrollTop = 0;
-        overflow.classList.add("overFlowHidden");
-        console.log("intento de apertura")
-      });
-    
-      closeButton.addEventListener("click", function() {
-        modal.classList.remove("show");
-        overflow.classList.remove("overFlowHidden");
-        document.documentElement.scrollTop = 1000;
-      });
-    } else {}
-  }
+  if (
+    openButton && 
+    closeButton && 
+    modal
+  ) {
+    openButton.addEventListener("click", function () {
+      modal.classList.add("show");
+      document.documentElement.scrollTop = 0;
+      overflow.classList.add("overFlowHidden");
+    });
+
+    closeButton.addEventListener("click", function () {
+      modal.classList.remove("show");
+      overflow.classList.remove("overFlowHidden");
+      document.documentElement.scrollTop = 1000;
+    });
+  } 
+}
 
 configureModal(openModalJavascript, closeModalJavascript, skillsModalJavaScript);
 configureModal(openModalCss, closeModalCss, skillsModalCss);
@@ -133,7 +137,6 @@ configureModal(openModalValentia, closeModalTemerario, skillsModalTemerario);
 configureModal(openModalPiano, closeModalPiano, aboutMeModalPiano);
 configureModal(openModalBooks, closeModalBooks, aboutMeModalBooks);
 configureModal(openModalSports, closeModalSports, aboutMeModalSports);
-
 
 
 /*=============== DARK LIGHT THEME ===============*/
@@ -182,24 +185,6 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
-
-/*=============== SCROLL REVEAL ANIMATION ===============*/
-
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: 2500,
-    delay: 400,
-})
-
-sr.reveal(`.profile__border`)
-sr.reveal(`.profile__name`, {delay: 500})
-sr.reveal(`.profile__profession`, {delay: 600})
-sr.reveal(`.profile__social`, {delay: 700})
-sr.reveal(`.profile__info-group`, {interval: 100, delay: 700})
-sr.reveal(`.profile__buttons`, {delay: 800})
-sr.reveal(`.filters__content`, {delay: 900})
-sr.reveal(`.filters`, {delay: 1000})
 
 
 /*=============== MOUSE ANIMATION ===============*/
@@ -329,8 +314,8 @@ function cambiarValorYMostrar() {
 
     // Cambiar el contenido del botón según el valor de la variable
     const translationTheme = document.querySelector(".translation-theme");
-    translationTheme.children[0].textContent = valorVariable ? "EN" : "EN";
-    translationTheme.children[2].textContent = valorVariable ? "ES" : "ES";
+    translationTheme.children[0].textContent = valorVariable ? "Es" : "En";
+    translationTheme.children[2].textContent = valorVariable ? "Es" : "Es";
 
     const elementsToUpdate = [
         Perfil,
@@ -371,8 +356,6 @@ function cambiarValorYMostrar() {
             element.classList.remove('earthquake-animation');
         });
     }, 1000);
-
-
 
 }
 
@@ -417,5 +400,26 @@ window.addEventListener('load', function() {
   const splashContent = document.querySelector('.splash-content');
   setTimeout(function() {
       splashContent.classList.add('hidden');
-  }, 8000); // Ajusta el tiempo según tu preferencia
+  }, 8000);
 });
+
+
+/*=============== SCROLL REVEAL ANIMATION ===============*/
+
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2600,
+  delay: 400,
+})
+
+sr.reveal(`.profile__border`, {delay: 2500})
+sr.reveal(`.profile__name`, {delay: 2600})
+sr.reveal(`.profile__profile`, {delay: 2650})
+sr.reveal(`.profile__profession`, {delay: 2700})
+sr.reveal(`.profile__social`, {delay: 2800})
+sr.reveal(`.profile__info-group`, {interval: 100, delay: 2900})
+sr.reveal(`.profile__buttons`, {delay: 3000})
+sr.reveal(`.floatButtonMobileContainer`, {delay: 3100})
+sr.reveal(`.filters__content`, {delay: 3200})
+sr.reveal(`.filters`, {delay: 4000})
