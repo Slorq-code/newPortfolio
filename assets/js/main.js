@@ -423,3 +423,14 @@ sr.reveal(`.profile__buttons`, {delay: 3000})
 sr.reveal(`.floatButtonMobileContainer`, {delay: 3100})
 sr.reveal(`.filters__content`, {delay: 3200})
 sr.reveal(`.filters`, {delay: 4000})
+
+
+
+const splash = document.getElementById("splash") 
+function displayNoneSplash() {
+    setTimeout(()=> {
+      splash.classList.remove("splash")
+      splash.classList.add("splashHidden")
+    }, 3500)   
+}
+displayNoneSplash()
