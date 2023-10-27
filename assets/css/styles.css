@@ -571,6 +571,8 @@ body.dark-theme {
   transition: .3s;
   box-shadow: 0 8px 24px hsla(var(--hue), var(--sat), var(--lig), .7);
   cursor: pointer;
+  max-width: 94px;
+  text-align: center;
 }
 
 

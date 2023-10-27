@@ -255,6 +255,8 @@ function cambiarValorYMostrar() {
             const TextTemerario = document.getElementById("TextTemerario");
             const TextEspañol = document.getElementById("TextEspañol");
             const TextIngles = document.getElementById("TextIngles");
+            const AccesButton1= document.getElementById("accesButton1");
+            const AccesButton2 = document.getElementById("accesButton2");
             Perfil.textContent = data.Perfil;
             Experiencia.textContent = data.Experiencia;
             NumeroDeProyectos.textContent = data.NumeroDeProyectos;
@@ -309,6 +311,8 @@ function cambiarValorYMostrar() {
             TextTemerario.textContent = data.TextTemerario;
             TextEspañol.textContent = data.Español;
             TextIngles.textContent = data.Ingles;
+            AccesButton1.textContent = data.AccesoClientes;
+            AccesButton2.textContent = data.AccesoClientes;
         })
         .catch(error => console.log(error));
 
@@ -342,7 +346,6 @@ function cambiarValorYMostrar() {
         TextCompañerismo,
         TextTemerario,
         TextIngles,
-        TextEspañol
     ];
 
     // Agregar la clase earthquake-animation a cada elemento
@@ -396,13 +399,14 @@ function scrollTopAndAnimate(...ids) {
 
 // ======================================================  efecto Splash
 
-window.addEventListener('load', function() {
-  const splashContent = document.querySelector('.splash-content');
-  setTimeout(function() {
-      splashContent.classList.add('hidden');
-  }, 8000);
-});
-
+const splash = document.getElementById("splash") 
+function displayNoneSplash() {
+    setTimeout(()=> {
+      splash.classList.remove("splash")
+      splash.classList.add("splashHidden")
+    }, 3500)   
+}
+displayNoneSplash()
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 
@@ -413,24 +417,15 @@ const sr = ScrollReveal({
   delay: 400,
 })
 
-sr.reveal(`.profile__border`, {delay: 2500})
-sr.reveal(`.profile__name`, {delay: 2600})
-sr.reveal(`.profile__profile`, {delay: 2650})
-sr.reveal(`.profile__profession`, {delay: 2700})
-sr.reveal(`.profile__social`, {delay: 2800})
-sr.reveal(`.profile__info-group`, {interval: 400, delay: 2900})
-sr.reveal(`.profile__buttons`, {delay: 3000})
-sr.reveal(`.floatButtonMobileContainer`, {delay: 3100})
-sr.reveal(`.filters__content`, {delay: 3200})
-sr.reveal(`.filters`, {delay: 4000})
+sr.reveal(`.profile__border`, {delay: 2000})
+sr.reveal(`.profile__name`, {delay: 3600})
+sr.reveal(`.profile__profile`, {delay: 3650})
+sr.reveal(`.profile__profession`, {delay: 3700})
+sr.reveal(`.profile__social`, {delay: 3800})
+sr.reveal(`.profile__info-group`, {interval: 400, delay: 3900})
+sr.reveal(`.profile__buttons`, {delay: 4000})
+sr.reveal(`.floatButtonMobileContainer`, {delay: 4100})
+sr.reveal(`.filters__content`, {delay: 4200})
+sr.reveal(`.filters`, {delay: 5000})
+sr.reveal(`.floatButtonContainer`, {delay: 5500})
 
-
-
-const splash = document.getElementById("splash") 
-function displayNoneSplash() {
-    setTimeout(()=> {
-      splash.classList.remove("splash")
-      splash.classList.add("splashHidden")
-    }, 3500)   
-}
-displayNoneSplash()
