@@ -37,5 +37,6 @@
     "TextCuriosidad":"Curiosidad",
     "TextTemerario":"Valentia",
     "Español":"Español",
-    "Ingles":"Ingles"
+    "Ingles":"Ingles",
+    "TextoLoginPage":"Si tienes un proyecto activo conmigo, inicia sesión con tu primer nombre (la primera letra en mayúscula) para conocer el cronograma y el estado de tu proyecto."
 }

@@ -36,5 +36,6 @@
   "TextCuriosidad":"Curiosity",
   "TextTemerario":"Daredevil",
   "Español":"Spanish",
-  "Ingles":"English"
+  "Ingles":"English",
+  "TextoLoginPage":"If you have an active project with me, please log in with your first name (the first letter capitalized) to check the schedule and the status of your project."
 }

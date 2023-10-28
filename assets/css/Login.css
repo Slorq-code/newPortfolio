@@ -1,0 +1,280 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    /*
+      Blue: hsl(207, 90%, 61%)
+      Purple: hsl(250, 66%, 75%)
+      Pink: hsl(356, 66%, 75%)
+      Teal: hsl(174, 63%, 62%)
+  */
+
+    --hue: 42;
+    --sat: 86%;
+    --lig: 54%;
+    --first-color: hsl(var(--hue), var(--sat), var(--lig));
+    --first-color-alt: hsl(var(--hue), var(--sat), 57%);
+    /* -4% */
+    --title-color: hsl(var(--hue), 12%, 15%);
+    --text-color: hsl(var(--hue), 12%, 45%);
+    --text-color-light: hsl(var(--hue), 8%, 75%);
+    --text-color-lighten: hsl(var(--hue), 8%, 92%);
+    --body-color: hsl(var(--hue), 100%, 99%);
+    --container-color: #fff;
+
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: 'Poppins', sans-serif;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: 1rem;
+}
+
+@media screen and (min-width: 968px) {
+    :root {
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+}
+
+
+body.dark-theme {
+    --title-color: hsl(var(--hue), 12%, 95%);
+    --text-color: hsl(var(--hue), 12%, 75%);
+    --body-color: hsl(var(--hue), 40%, 8%);
+    --container-color: hsl(var(--hue), 24%, 12%);
+}
+
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    transition: .3s;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+
+.formSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    max-width: 400px;
+    border-radius: 20px;
+    padding: 2rem 3rem;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 150px;
+    background-color: var(--text-color-light);
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+
+
+
+/*  =============================================  */
+
+
+.ball {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    padding: 0 50px;
+    background-color: var(--text-color-light);
+}
+
+.ball span {
+    text-align: center;
+    color: var(--title-color);
+    max-width: 300px;
+}
+
+.ball:hover {
+    border: 4px var(--text-color-light) solid;
+}
+
+
+.ballContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: calc(120vh - 500px);
+    left: calc(100vh - 500px);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: var(--text-color-light);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.ballHome i {
+    color: var(--title-color);
+    font-size: 5rem;
+}
+
+.ballContainer:hover {
+    border: 4px var(--body-color) solid;
+}
+
+.ballContainer:hover .ballHome {
+    transition: .3s ease-in;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.ballContainer:hover .ballHome i {
+    font-size: 6rem;
+    transition: .3s ease-in;
+}
+
+.translation-theme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.es,
+.en {
+    width: 22px;
+    aspect-ratio: 1/1;
+    text-transform: capitalize;
+}
+
+.check {
+    position: relative;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.check:hover {
+    box-shadow: 0 8px 24px hsla(var(--hue), var(--sat), var(--lig), .7);
+}
+
+.check:before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: #333;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.check:after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    transition: 0.25s;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -ms-transition: 0.25s;
+    -o-transition: 0.25s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+
+.check:checked:after {
+    left: 25px;
+    border: 2px solid var(--first-color);
+}
+
+.check:checked:before {
+    background: var(--first-color);
+}
+
+.change-theme {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    font-size: 1.25rem;
+    color: var(--title-color);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.change-theme:hover {
+    color: var(--first-color);
+}
+
+
+.translation-theme {
+    position: absolute;
+    top: 1.5rem;
+    left: 2rem;
+    font-size: 1rem;
+    color: var(--title-color);
+    transition: .3s;
+}
+
+.translation-theme:hover {
+    color: var(--first-color);
+}
+
+
+.buttonLogin {
+    border: none;
+}
+
+
+/* ============================ dark theme ============================ */
+
+.dark-theme .ballContainer,
+.dark-theme .ballHome,
+.dark-theme .ball,
+.dark-theme .form {
+    background-color: var(--container-color);
+}
