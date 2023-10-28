@@ -124,7 +124,7 @@ body {
 .ball span {
     text-align: center;
     color: var(--title-color);
-    max-width: 290px;
+    max-width: 250px;
 }
 
 .ball:hover {
