@@ -79,22 +79,21 @@ displayNoneSplash()
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 
 const sr = ScrollReveal({
-  origin: 'left',
-  distance: '60px',
+  origin: 'top',
+  distance: '20px',
   duration: 2600,
   delay: 400,
 })
 
-sr.reveal(`.profile__border`, {delay: 2000, origin: "right" })
+sr.reveal(`.profile__border`, {delay: 2000, })
 sr.reveal(`.profile__name`, {delay: 3600})
-sr.reveal(`.profile__profile`, {delay: 3650, origin: "right" })
+sr.reveal(`.profile__profile`, {delay: 3650, })
 sr.reveal(`.profile__profession`, {delay: 3700})
-sr.reveal(`.profile__social`, {delay: 3800, origin: "right" })
+sr.reveal(`.profile__social`, {delay: 3800, })
 sr.reveal(`.profile__info-group`, {interval: 400, delay: 3900})
-sr.reveal(`.profile__buttons`, {delay: 4000, origin: "right" })
+sr.reveal(`.profile__buttons`, {delay: 4000, })
 sr.reveal(`.floatButtonMobileContainer`, {delay: 4100})
-sr.reveal(`.filters__content`, {delay: 4200, origin: "right" })
+sr.reveal(`.filters__content`, {delay: 4200, })
 sr.reveal(`.containerAnimation`, {delay: 4250})
-sr.reveal(`.filters`, {delay: 5000, origin: "right" })
+sr.reveal(`.filters`, {delay: 5000, })
 sr.reveal(`.floatButtonContainer`, {delay: 5500,})
-
