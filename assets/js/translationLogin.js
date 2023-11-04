@@ -9,6 +9,8 @@ function cambiarValorYMostrar() {
     // Cambiar el valor de la variable
     valorVariable = !valorVariable; // Si era true, ahora será false, y viceversa
     const LoginText = document.getElementById("loginText");
+    const nombreText = document.getElementById("nombre");
+    const consultarText = document.getElementById("consultar");
 
     // Cargar el contenido del JSON según el idioma seleccionado
     const langFile = valorVariable ? 'assets/json/textos_espanol.json' : 'assets/json/textos_ingles.json';
@@ -16,16 +18,20 @@ function cambiarValorYMostrar() {
         .then(response => response.json())
         .then(data => {
             LoginText.textContent = data.TextoLoginPage;
+            nombreText.textContent = data.Nombre;
+            consultarText.textContent = data.Consultar
         })
         .catch(error => console.log(error));
 
     // Cambiar el contenido del botón según el valor de la variable
     const translationTheme = document.querySelector(".translation-theme");
-    translationTheme.children[0].textContent = valorVariable ? "Es" : "En";
+    translationTheme.children[0].textContent = valorVariable ? "En" : "En";
     translationTheme.children[2].textContent = valorVariable ? "Es" : "Es";
 
     const elementsToUpdate = [
-        LoginText
+        LoginText,
+        nombreText,
+        consultarText
     ];
 
     // Agregar la clase earthquake-animation a cada elemento

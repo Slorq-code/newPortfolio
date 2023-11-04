@@ -73,98 +73,14 @@ body {
 }
 
 
-.formSection {
+
+.allBody {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    position: absolute;
-    top: 28%;
-    left: 50%;
-    max-width: 400px;
-    border-radius: 20px;
-    padding: 2rem 3rem;
-}
-
-.form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 300px;
-    height: 150px;
-    background-color: var(--text-color-light);
-    border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
-}
-
-
-
-
-/*  =============================================  */
-
-
-.ball {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 15%;
-    left: 20%;
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    padding: 0 50px;
-    background-color: var(--text-color-light);
-}
-
-.ball span {
-    text-align: center;
-    color: var(--title-color);
-    max-width: 250px;
-}
-
-.ball:hover {
-    border: 4px var(--text-color-light) solid;
-}
-
-
-.ballContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: calc(120vh - 500px);
-    left: calc(100vh - 500px);
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: var(--text-color-light);
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.ballHome i {
-    color: var(--title-color);
-    font-size: 5rem;
-}
-
-.ballContainer:hover {
-    border: 4px var(--body-color) solid;
-}
-
-.ballContainer:hover .ballHome {
-    transition: .3s ease-in;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.ballContainer:hover .ballHome i {
-    font-size: 6rem;
-    transition: .3s ease-in;
+    height: 100vh;
 }
 
 .translation-theme {
@@ -264,17 +180,110 @@ body {
     color: var(--first-color);
 }
 
+.ball {
+    background-color: var(--text-color-light);
+    padding: 1.5rem;
+    border-radius: 20px;
+    max-width: 350px;
+}
+
+.insideBall {
+    background-color: var(--body-color);
+    border-radius: 15px;
+    padding: 1.5rem;
+}
+
+.insideBall span {
+    text-align: justify;
+}
+
+.backHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 25px 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--text-color-light);
+}
+
+.backHome:hover {
+    transform: scale(1.3);
+    transition: .3s ease-out;
+}
+
+.backHome i {
+    color: var(--body-color);
+    font-size: 30px;
+}
+
 
 .buttonLogin {
     border: none;
+    margin-top: 10px;
 }
+
+.formSection {
+    position: relative;
+    background-color: var(--text-color-light);
+    padding: 1.5rem;
+    border-radius: 20px;
+    margin: 10px 0 0 0;
+    width: 350px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem;
+    background-color: var(--body-color);
+    border-radius: 20px;
+}
+
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    max-width: 310px;
+    border-bottom: 2px solid var(--text-color-light);
+}
+
+.inputbox label {
+    position: absolute;
+    top: 0%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.inputbox input {
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+
+
 
 
 /* ============================ dark theme ============================ */
 
-.dark-theme .ballContainer,
 .dark-theme .ballHome,
+.dark-theme .backHome,
 .dark-theme .ball,
-.dark-theme .form {
+.dark-theme .formSection {
     background-color: var(--container-color);
+}
+
+.dark-theme .backHome i {
+    color: #fff;
 }

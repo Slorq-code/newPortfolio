@@ -21,41 +21,38 @@
     <title>Andres - Login</title>
   </head>
   <body>
-    <div class="all" >
-         <!-- ============================================== -->
-    <div class="optionsHeader">
+    <div class="allBody">
+      <div class="optionsHeaderLogin">
         <i class="ri-moon-line change-theme" id="theme-button"></i>
         <div class="translation-theme">
           <span>En</span>
           <input type="checkbox" class="check" />
           <span>Es</span>
         </div>
-    </div>
-
-    <div class="ball"> 
-        <span id="loginText"></span> 
-    </div>
-    <a class="ballContainer" href="./index.html">
-        <div class="ballHome">
-            <i class="ri-home-2-fill"></i>
+      </div>
+      <div class="ball">
+        <div class="insideBall" >
+          <span id="loginText"></span>
         </div>
-    </a>
-      <!-- ============================================== -->
+      </div>
       <section class="formSection">
         <form class="form">
-            <label for="">Nombre</label>
-            <input type="text">
+          <div class="inputbox">
+            <label id="nombre" for="nombreInput">Nombre:</label>
+            <input type="email" required id="nombreInput"/>
+          </div>
+          <button class="button buttonLogin" id="consultar"></button>
         </form>
-        <button class="button buttonLogin" >Send</button>
       </section>
+      <a class="backHome" href="./index.html">
+          <i class="ri-home-2-fill"></i>
+      </a>
     </div>
 
+    <!--=============== theme JS ===============-->
+    <script src="assets/js/theme.js"></script>
 
-        <!--=============== modal JS ===============-->
-        <script src="assets/js/theme.js"></script>
-
-        <!--=============== modal JS ===============-->
-        <script src="assets/js/translationLogin.js"></script>
-
+    <!--=============== lenguage JS ===============-->
+    <script src="assets/js/translationLogin.js"></script>
   </body>
 </html>
