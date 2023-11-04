@@ -11,6 +11,7 @@ function cambiarValorYMostrar() {
     const LoginText = document.getElementById("loginText");
     const nombreText = document.getElementById("nombre");
     const consultarText = document.getElementById("consultar");
+    const TextoFooter = document.getElementById("TextoFooter");
 
     // Cargar el contenido del JSON según el idioma seleccionado
     const langFile = valorVariable ? 'assets/json/textos_espanol.json' : 'assets/json/textos_ingles.json';
@@ -19,7 +20,8 @@ function cambiarValorYMostrar() {
         .then(data => {
             LoginText.textContent = data.TextoLoginPage;
             nombreText.textContent = data.Nombre;
-            consultarText.textContent = data.Consultar
+            consultarText.textContent = data.Consultar;
+            TextoFooter.textContent = data.TextoFooter
         })
         .catch(error => console.log(error));
 
@@ -31,7 +33,8 @@ function cambiarValorYMostrar() {
     const elementsToUpdate = [
         LoginText,
         nombreText,
-        consultarText
+        consultarText,
+        TextoFooter
     ];
 
     // Agregar la clase earthquake-animation a cada elemento
