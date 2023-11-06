@@ -1,4 +1,4 @@
-const langFile = "assets/json/clientes.json";
+const langFile = "https://raw.githubusercontent.com/Slorq-code/newPortfolio/master/assets/json/Clientes.json";
 const fechaActual = new Date();
 const mesActual = fechaActual.getMonth();
 const diaActual = fechaActual.getDate(); // Obtén el día actual
