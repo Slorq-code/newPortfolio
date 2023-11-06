@@ -16,7 +16,8 @@
     --sat: 86%;
     --lig: 54%;
     --first-color: hsl(var(--hue), var(--sat), var(--lig));
-    --first-color-alt: hsl(var(--hue), var(--sat), 57%);
+    --first-color-medio: hsl(var(--hue), var(--sat), 35%);
+    --first-color-down: hsl(var(--hue), var(--sat), 25%);
     /* -4% */
     --title-color: hsl(var(--hue), 12%, 15%);
     --text-color: hsl(var(--hue), 12%, 45%);
@@ -58,6 +59,7 @@ body {
     width: 100%;
     min-height: 100vh;
     position: relative;
+    z-index: 1;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
@@ -160,6 +162,7 @@ body {
     color: var(--title-color);
     cursor: pointer;
     transition: .3s;
+    z-index: 9;
 }
 
 .change-theme:hover {
@@ -219,6 +222,28 @@ body {
     font-size: 30px;
 }
 
+.backHomeModal {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 25px 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--text-color-light);
+}
+
+.backHomeModal:hover {
+    transform: scale(1.3);
+    transition: .3s ease-out;
+}
+
+.backHomeModal i {
+    color: var(--body-color);
+    font-size: 30px;
+}
+
 
 .buttonLogin {
     border: none;
@@ -250,15 +275,15 @@ body {
 
     0%,
     100% {
-      transform: translateY(0);
-      /* Posición inicial y final: no se mueve en el eje Y */
+        transform: translateY(0);
+        /* Posición inicial y final: no se mueve en el eje Y */
     }
-  
+
     50% {
-      transform: translateY(-15px);
-      /* Posición intermedia: se mueve hacia arriba */
+        transform: translateY(-15px);
+        /* Posición intermedia: se mueve hacia arriba */
     }
-  }
+}
 
 
 
@@ -274,8 +299,8 @@ body {
     top: 0%;
     left: 5px;
     transform: translateY(-50%);
-    font-size: 1rem;
     pointer-events: none;
+    font-size: 1rem;
     transition: all 0.5s ease-in-out;
 }
 
@@ -288,7 +313,7 @@ body {
     outline: none;
     font-size: 1rem;
     padding: 0 35px 0 5px;
-    color: #fff;
+    color: var(--text-color);
 }
 
 .footerLogin {
@@ -305,17 +330,151 @@ body {
     color: var(--text-color-light);
 }
 
+.hidden {
+    display: none !important;
+}
+
+.modalTentative {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+    top: 0;
+    background-color: var(--body-color);
+    display: grid;
+    align-items: center;
+    padding: 1.5rem 1.25rem;
+    transition: .3s;
+    z-index: 8;
+}
+
+
+.calendario {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    width: 650px;
+    margin: 0 auto;
+}
+
+.calendario div {
+    border: 5px solid var(--text-color-light);
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: var(--text-color-light);
+    color: white;
+    transition: .1s ease-in-out;
+}
+
+.calendario div:hover {
+    background-color: var(--body-color) !important;
+    color: var(--text-color);
+}
+
+.dia-vacio {
+    opacity: 0;
+}
+
+.clienteTitle {
+    text-align: center;
+}
+
+.diaActual {
+    background-color: var(--first-color-down) !important;
+}
+
+.diaMedio {
+        animation: medioAnimation 6s infinite ease-in-out;
+}
+
+@keyframes  medioAnimation{
+    0% {
+        background-color: var(--container-color);
+    }
+    25% {
+        background-color: var(--first-color-medio);
+    }
+    50% {
+        background-color: var(--container-color);
+    }
+    75% {
+        background-color: var(--first-color-medio);
+    }
+    100% {
+        background-color: var(--container-color);
+    }
+}
+
+.diaTentativa {
+    animation: tentativeAnimation 3s infinite ease-in-out;
+}
+
+@keyframes tentativeAnimation {
+    0% {
+        background-color: var(--first-color);
+        transform: scale3d(1, 1, 1)
+    }
+
+    30% {
+        background-color: var(--container-color);
+        transform: scale3d(1, .95, 1)
+    }
+
+    40% {
+        background-color: var(--first-color);
+        transform: scale3d(.95, 1, 1)
+    }
+
+    50% {
+        background-color: var(--container-color);
+        transform: scale3d(1.05, .95, 1)
+    }
+
+    65% {
+        background-color: var(--first-color);
+        transform: scale3d(.95, 1.05, 1)
+    }
+
+    75% {
+        background-color: var(--container-color);
+        transform: scale3d(1.05, .95, 1);
+        box-shadow: 0 0 20px 0 var(--first-color);
+    }
+
+    100% {
+        background-color: var(--first-color);
+        transform: scale3d(1, 1, 1);
+        box-shadow: none;
+    }
+}
+
+
+
+
 
 
 /* ============================ dark theme ============================ */
 
 .dark-theme .ballHome,
 .dark-theme .backHome,
+.dark-theme .backHomeModal,
 .dark-theme .ball,
 .dark-theme .formSection {
     background-color: var(--container-color);
 }
 
+.dark-theme .backHomeModal i,
 .dark-theme .backHome i {
     color: #fff;
+}
+.dark-theme .calendario div {
+    border: 5px solid var(--container-color);
+    background-color: var(--container-color);
+}
+
+.dark-theme .calendario div:hover {
+    background-color: var(--body-color) !important;
 }

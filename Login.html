@@ -31,7 +31,7 @@
         </div>
       </div>
       <div class="ball">
-        <div class="insideBall" >
+        <div class="insideBall">
           <span id="loginText"></span>
         </div>
       </div>
@@ -39,13 +39,13 @@
         <form class="form">
           <div class="inputbox">
             <label id="nombre" for="nombreInput">Nombre:</label>
-            <input required id="nombreInput"/>
+            <input required id="nombreInput" />
           </div>
           <button class="button buttonLogin" id="consultar"></button>
         </form>
       </section>
       <a class="backHome" href="./index.html">
-          <i class="ri-home-2-fill"></i>
+        <i class="ri-home-2-fill"></i>
       </a>
     </div>
 
@@ -55,6 +55,26 @@
       </span>
     </footer>
 
+    <div class="modalTentative hidden" id="modalTentative">
+      <div class="clienteTitle">
+        <h2 id="clienteTitle"></h2>
+        <h3 id="statusText">El estatus de tu proyecto es:</h3>
+        <span id="status"></span>
+        <br />
+        <h4 id="textTentativa">La fecha tentativa de finalizacion es:</h4>
+        <span id="fechaTentativa"></span>
+        <br />
+        <h5 id="textCronograma">En este momento se trabaja en:</h5>
+        <span id="cronograma"></span>
+      </div>
+      <div class="modalTentative__container">
+        <div id="calendario" class="calendario"></div>
+      </div>
+      <a class="backHomeModal" href="./index.html">
+        <i class="ri-home-2-fill"></i>
+      </a>
+    </div>
+
     <!--=============== theme JS ===============-->
     <script src="assets/js/theme.js"></script>
 
@@ -63,6 +83,5 @@
 
     <!--=============== clientes JS ===============-->
     <script src="assets/js/clientes.js"></script>
-
   </body>
 </html>

@@ -2,7 +2,17 @@
     "Andres" : {
         "apellido": "Rodriguez",
         "tipoProyecto":"mobile",
-        "Cronograma":"se estan generando actualizaciones de bla bla bla",
-        "tentativa": "6"
+        "status":"En curo",
+        "cronograma":"se estan generando actualizaciones de bla bla bla",
+        "tentativa": 14,
+        "tentativaCompleta":"14/11/2023"
+    },
+    "Laura" : {
+        "apellido": "Navarro",
+        "tipoProyecto":"mobile",
+        "status":"QA",
+        "cronograma":"se estan generando actualizaciones de bla bla bla",
+        "tentativa": 16,
+        "tentativaCompleta":"16/11/2023"
     }
 }
