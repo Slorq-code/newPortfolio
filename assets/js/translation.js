@@ -115,7 +115,7 @@ function cambiarValorYMostrar() {
 
     // Cambiar el contenido del botón según el valor de la variable
     const translationTheme = document.querySelector(".translation-theme");
-    translationTheme.children[0].textContent = valorVariable ? "Es" : "En";
+    translationTheme.children[0].textContent = valorVariable ? "En" : "En";
     translationTheme.children[2].textContent = valorVariable ? "Es" : "Es";
 
     const elementsToUpdate = [

@@ -4,7 +4,7 @@
         "tipoProyecto":"mobile",
         "status":"En curo",
         "cronograma":"se estan generando actualizaciones de bla bla bla",
-        "tentativa": 14,
+        "tentativa": 22,
         "tentativaCompleta":"14/11/2023"
     },
     "Laura" : {
@@ -12,7 +12,7 @@
         "tipoProyecto":"mobile",
         "status":"QA",
         "cronograma":"se estan generando actualizaciones de bla bla bla",
-        "tentativa": 16,
+        "tentativa": 28,
         "tentativaCompleta":"16/11/2023"
     }
 }

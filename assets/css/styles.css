@@ -644,7 +644,7 @@ body.dark-theme {
 }
 
 .projects__card img {
-  width: 100%;
+  width: auto;
   height: 100%;
 }
 
@@ -1490,10 +1490,10 @@ body.dark-theme {
     grid-template-columns: repeat(2, 400px);
   }
 
-  .projects__content,
+  /* .projects__content,
   .skills__content {
     grid-template-columns: repeat(2, 332px);
-  }
+  } */
 
   .skills__content {
     justify-content: center;

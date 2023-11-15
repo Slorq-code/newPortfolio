@@ -355,7 +355,7 @@ body {
     align-items: center;
     grid-template-columns: repeat(7, 1fr);
     gap: 10px;
-    width: 650px;
+    width: 770px;
     margin: 0 auto;
 }
 
@@ -478,3 +478,39 @@ body {
 .dark-theme .calendario div:hover {
     background-color: var(--body-color) !important;
 }
+
+
+
+
+@media screen and ( max-width: 970px ) {
+    .calendario {
+        grid-template-columns: repeat(4, 1fr);
+        width: 500px;
+    }
+
+    .calendario div {
+        padding: 1px;
+    }
+}
+
+
+/*
+.calendario {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    width: 770px;
+    margin: 0 auto;
+}
+
+.calendario div {
+    border: 5px solid var(--text-color-light);
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: var(--text-color-light);
+    color: white;
+    transition: .1s ease-in-out;
+}
+*/
