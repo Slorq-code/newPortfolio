@@ -1,693 +1,554 @@
 <!DOCTYPE html>
 <html lang="es" id="modalOverflow">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--=============== FAVICON ===============-->
-    <link
-      rel="shortcut icon"
-      href="assets/img/yoFavicon.ico"
-      type="image/x-icon"
-    />
-    <!--=============== REMIX ICONS ===============-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <title>It´s me</title>
-  </head>
 
-  <body id="modalOverflow">
-    <!--=============== Splash ===============-->
-    <div class="splash" id="splash" >
-      <div class="splash-content">
-        <span class="loader"></span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="assets/img/yoFavicon.ico" type="image/x-icon" />
+  <!--=============== REMIX ICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <title>It´s me</title>
+</head>
+
+<body id="modalOverflow">
+  <!--=============== Splash ===============-->
+  <div class="splash" id="splash">
+    <div class="splash-content">
+      <span class="loader"></span>
+    </div>
+  </div>
+  <!--=============== All ===============-->
+  <div class="all">
+    <div class="optionsHeader">
+      <div class="floatButtonContainer">
+        <a class="floatButton buttonXs" href="./Login.html">
+          <span id="accesButton1"></span>
+        </a>
+      </div>
+      <i class="ri-moon-line change-theme" id="theme-button"></i>
+      <div class="translation-theme">
+        <span>En</span>
+        <input type="checkbox" class="check" />
+        <span>Es</span>
       </div>
     </div>
-<!--=============== All ===============-->
-    <div class="all">
-      <div class="optionsHeader">
-        <div class="floatButtonContainer" >
-            <a class="floatButton buttonXs" href="./Login.html">
-                <span id="accesButton1"></span>
-            </a>
-        </div>
-        <i class="ri-moon-line change-theme" id="theme-button"></i>
-        <div class="translation-theme">
-          <span>En</span>
-          <input type="checkbox" class="check" />
-          <span>Es</span>
-        </div>
-      </div>
-      <!--============= ANIMATION ==============-->
+    <!--============= ANIMATION ==============-->
 
-      <div class="containerAnimation">
-        <img
-          class="objetAnimation"
-          src="./assets/img/recursos/flechaAnimation2.png"
-          alt="scroll"
-          id="objetAnimation"
-        />
-      </div>
+    <div class="containerAnimation">
+      <img class="objetAnimation" src="./assets/img/recursos/flechaAnimation2.png" alt="scroll" id="objetAnimation" />
+    </div>
 
-      <!--=============== HEADER ===============-->
-      <header class="profile container">
-        <div class="profile__container grid">
-          <div class="profile__data">
-            <div class="profile__border">
-              <div class="profile__perfil">
-                <img src="assets/img/Perfil1.png" alt="Andres" />
-              </div>
-            </div>
-            <h2 class="profile__name">Andrés Rodríguez.</h2>
-
-            <div class="profile__profile">
-              <h3 id="Perfil"></h3>
-            </div>
-            
-            <h3 class="profile__profession" id="element-to-animate1">
-              andresfra65@gmail.com
-            </h3>
-            <ul class="profile__social">
-              <a
-                id="element-to-animate2"
-                href="https://www.instagram.com/afr.rorro/"
-                target="_blank"
-                class="profile__social-link"
-              >
-                <i class="ri-instagram-line"></i>
-              </a>
-              <a
-                id="element-to-animate3"
-                href="https://www.linkedin.com/in/and-rod/"
-                target="_blank"
-                class="profile__social-link"
-              >
-                <i class="ri-linkedin-box-line"></i>
-              </a>
-              <a
-                href="https://github.com/Slorq-code"
-                target="_blank"
-                class="profile__social-link"
-              >
-                <i class="ri-github-line"></i>
-              </a>
-            </ul>
-          </div>
-          <div class="profile__info grid">
-            <div class="profile__info-group">
-              <h3 class="profile__info-number">+2</h3>
-              <p id="Experiencia" class="profile__info-description"></p>
-            </div>
-            <div class="profile__info-group">
-              <h3 class="profile__info-number">+20</h3>
-              <p id="NumeroDeProyectos" class="profile__info-description"></p>
-            </div>
-            <div class="profile__info-group">
-              <h3 class="profile__info-number">+15</h3>
-              <p id="NumeroDeClientes" class="profile__info-description"></p>
+    <!--=============== HEADER ===============-->
+    <header class="profile container">
+      <div class="profile__container grid">
+        <div class="profile__data">
+          <div class="profile__border">
+            <div class="profile__perfil">
+              <img src="assets/img/Perfil1.png" alt="Andres" />
             </div>
           </div>
-          <div class="profile__buttons">
-            <!-- CV -->
-            <a
-              id="BotonCV"
-              href="assets/pdf/AndresCV2023.pdf"
-              class="button"
-              target="_blank"
-            >
-            </a>
-            <div class="profile__buttons-small">
-              <!--number phone-->
-              <a
-                id="element-to-animate5"
-                href="https://api.whatsapp.com/send?phone=573043306156&text=Hola Andres, tengo algo que preguntarte!"
-                target="_blank"
-                class="button button__small button__gray"
-              >
-                <i class="ri-whatsapp-line"></i>
-              </a>
-            </div>
+          <h2 class="profile__name">Andrés Rodríguez.</h2>
+
+          <div class="profile__profile">
+            <h3 id="Perfil"></h3>
           </div>
-          <div class="floatButtonMobileContainer" >
-            <a class="floatButtonMobile buttonXs"  href="./Login.html">
-                <span id="accesButton2"></span>
+
+          <h3 class="profile__profession" id="element-to-animate1">
+            andresfra65@gmail.com
+          </h3>
+          <ul class="profile__social">
+            <a id="element-to-animate2" href="https://www.instagram.com/afr.rorro/" target="_blank"
+              class="profile__social-link">
+              <i class="ri-instagram-line"></i>
             </a>
-        </div>
-        </div>
-      </header>
-      <!--=============== MAIN ===============-->
-      <main class="main">
-        <section class="filters container">
-          <!--=============== FILTERS TABS ===============-->
-          <ul class="filters__content">
-            <button
-              id="Proyectos"
-              class="filters__button filter-tab-active"
-              data-target="#projects"
-            ></button>
-            <button
-              id="Habilidades"
-              class="filters__button"
-              data-target="#skills"
-            ></button>
-            <button
-              id="Yo"
-              class="filters__button"
-              data-target="#AboutMe"
-            ></button>
+            <a id="element-to-animate3" href="https://www.linkedin.com/in/and-rod/" target="_blank"
+              class="profile__social-link">
+              <i class="ri-linkedin-box-line"></i>
+            </a>
+            <a href="https://github.com/Slorq-code" target="_blank" class="profile__social-link">
+              <i class="ri-github-line"></i>
+            </a>
           </ul>
-          <div class="filters__sections">
-            <!--=============== PROJECTS ===============-->
-            <div
-              class="projects__content grid filters__active"
-              data-content
-              id="projects"
-            >
-              <article class="projects__card">
-                <img
-                  src="assets/img/Proyectos/GuitarLAReSize.jpg"
-                  alt="Proyectos"
-                  class="projects__img"
-                />
-                <div class="projects__modal">
-                  <div>
-                    <span id="Proyecto1" class="projects__subtitle"></span>
-                    <h3 class="projects__title">HTML + SCSS</h3>
-                    <a
-                      href="https://csscurse18.vercel.app/index.html"
-                      target="_blank"
-                      class="projects__button button button__small"
-                    >
-                      <i class="ri-link"></i>
-                    </a>
-                    <a
-                      href="https://github.com/Slorq-code/CssCurse-18"
-                      target="_blank"
-                      class="projects__button button button__small"
-                    >
-                      <i class="ri-github-fill"></i>
-                    </a>
-                  </div>
-                </div>
-              </article>
-              <article class="projects__card">
-                <img
-                  src="assets/img/Proyectos/AppDeliveryReSize.jpg"
-                  alt="Proyectos"
-                  class="projects__img"
-                />
-                <div class="projects__modal">
-                  <div>
-                    <span id="Proyecto2" class="projects__subtitle"></span>
-                    <h3 class="projects__title">HTML + SCSS</h3>
-                    <a
-                      href="https://csscurse11.vercel.app"
-                      target="_blank"
-                      class="projects__button button button__small"
-                    >
-                      <i class="ri-link"></i>
-                    </a>
-                    <a
-                      href="https://github.com/Slorq-code/-CssCurse-11"
-                      target="_blank"
-                      class="projects__button button button__small"
-                    >
-                      <i class="ri-github-fill"></i>
-                    </a>
-                  </div>
-                </div>
-              </article>
-              <article class="projects__card">
-                <img
-                  src="assets/img/Proyectos/CheetosReSize.jpg"
-                  alt="Proyectos"
-                  class="projects__img"
-                />
-                <div class="projects__modal">
-                  <div>
-                    <span id="Proyecto3" class="projects__subtitle"></span>
-                    <h3 class="projects__title">React.js</h3>
-                    <a
-                      href="https://chesterdrop.com/"
-                      target="_blank"
-                      class="projects__button button button__small"
-                    >
-                      <i class="ri-link"></i>
-                    </a>
-                  </div>
-                </div>
-              </article>
-              <article class="projects__card">
-                <img
-                  src="assets/img/Proyectos/NoelReSize.jpg"
-                  alt=""
-                  class="projects__img"
-                />
-                <div class="projects__modal">
-                  <div>
-                    <span id="Proyecto4" class="projects__subtitle"></span>
-                    <h3 class="projects__title">Vue.js</h3>
-                    <a
-                      href="https://noel-2023.vercel.app/"
-                      target="_blank"
-                      class="projects__button button button__small"
-                    >
-                      <i class="ri-link"></i>
-                    </a>
-                  </div>
-                </div>
-              </article>
-              <article class="projects__card">
-                <img
-                  src="assets/img/Proyectos/CapturaAppNews.jpg"
-                  alt="proyecto"
-                  class="projects__img"
-                />
-                <div class="projects__modal">
-                  <div>
-                    <span id="Proyecto6" class="projects__subtitle"></span>
-                    <h3 class="projects__title">Dart + Flutter</h3>
-                    <a
-                      href="https://www.youtube.com/watch?v=TlBG-_ooO-k"
-                      target="_blank"
-                      class="projects__button button button__small"
-                    >
-                      <i class="ri-link"></i>
-                    </a>
-                    <a
-                      href="https://github.com/Slorq-code/App-news"
-                      target="_blank"
-                      class="projects__button button button__small"
-                    >
-                      <i class="ri-github-fill"></i>
-                    </a>
-                  </div>
-                </div>
-              </article>
-              <article class="projects__card">
-                <img
-                  src="assets/img/Proyectos/CatApp.png"
-                  alt="proyecto"
-                  class="projects__img"
-                />
-                <div class="projects__modal">
-                  <div>
-                    <span id="Proyecto5" class="projects__subtitle"></span>
-                    <h3 class="projects__title">Dart + Flutter</h3>
-                    <a
-                      href="https://www.youtube.com/watch?v=qiFoz2mWEx8"
-                      target="_blank"
-                      class="projects__button button button__small"
-                    >
-                      <i class="ri-link"></i>
-                    </a>
-                    <a
-                      href="https://github.com/Slorq-code/GatoPragmatico"
-                      target="_blank"
-                      class="projects__button button button__small"
-                    >
-                      <i class="ri-github-fill"></i>
-                    </a>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <!--=============== SKILLS ===============-->
-            <div class="skills__content grid" data-content id="skills">
-              <div class="skills__area">
-                <h3 id="TituloFrontend" class="skills__title"></h3>
-                <div class="skills__box">
-                  <div class="skills__group">
-                    <div class="skills__data">
-                      <i class="ri-checkbox-circle-line"></i>
-                      <div class="skills__element" id="html">
-                        <h3 class="skills__name">HTML</h3>
-                        <i class="ri-html5-line"></i>
-                      </div>
-                    </div>
-                    <div class="skills__data">
-                      <i class="ri-checkbox-circle-line"></i>
-                      <div class="skills__element" id="css">
-                        <h3 class="skills__name">CSS</h3>
-                        <i class="ri-css3-line"></i>
-                      </div>
-                    </div>
-                    <div class="skills__data">
-                      <i class="ri-checkbox-circle-line"></i>
-                      <div class="skills__element" id="javaScript">
-                        <h3 class="skills__name">JavaScript</h3>
-                        <i class="ri-code-s-slash-line"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="skills__group">
-                    <div class="skills__data">
-                      <i class="ri-checkbox-circle-line"></i>
-                      <div class="skills__element" id="react">
-                        <h3 class="skills__name">React.js</h3>
-                        <i class="ri-reactjs-fill"></i>
-                      </div>
-                    </div>
-                    <div class="skills__data">
-                      <i class="ri-checkbox-circle-line"></i>
-                      <div class="skills__element" id="vue">
-                        <h3 class="skills__name">Vue.js</h3>
-                        <i class="ri-vuejs-line"></i>
-                      </div>
-                    </div>
-                    <div class="skills__data">
-                      <i class="ri-checkbox-circle-line"></i>
-                      <div class="skills__element" id="git">
-                        <h3 class="skills__name">Git</h3>
-                        <i class="ri-git-branch-line"></i>
-                      </div>
-                    </div>
-                  </div>
+        </div>
+        <div class="profile__info grid">
+          <div class="profile__info-group">
+            <h3 class="profile__info-number">+2</h3>
+            <p id="Experiencia" class="profile__info-description"></p>
+          </div>
+          <div class="profile__info-group">
+            <h3 class="profile__info-number">+20</h3>
+            <p id="NumeroDeProyectos" class="profile__info-description"></p>
+          </div>
+          <div class="profile__info-group">
+            <h3 class="profile__info-number">+15</h3>
+            <p id="NumeroDeClientes" class="profile__info-description"></p>
+          </div>
+        </div>
+        <div class="profile__buttons">
+          <!-- CV -->
+          <a id="BotonCV" href="assets/pdf/AndresCV2023.pdf" class="button" target="_blank">
+          </a>
+          <div class="profile__buttons-small">
+            <!--number phone-->
+            <a id="element-to-animate5"
+              href="https://api.whatsapp.com/send?phone=573043306156&text=Hola Andres, tengo algo que preguntarte!"
+              target="_blank" class="button button__small button__gray">
+              <i class="ri-whatsapp-line"></i>
+            </a>
+          </div>
+        </div>
+        <div class="floatButtonMobileContainer">
+          <a class="floatButtonMobile buttonXs" href="./Login.html">
+            <span id="accesButton2"></span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <section class="filters container">
+        <!--=============== FILTERS TABS ===============-->
+        <ul class="filters__content">
+          <button id="Proyectos" class="filters__button filter-tab-active" data-target="#projects"></button>
+          <button id="Habilidades" class="filters__button" data-target="#skills"></button>
+          <button id="Yo" class="filters__button" data-target="#AboutMe"></button>
+        </ul>
+        <div class="filters__sections">
+          <!--=============== PROJECTS ===============-->
+          <div class="projects__content grid filters__active" data-content id="projects">
+            <article class="projects__card">
+              <img src="assets/img/Proyectos/GuitarLAReSize.jpg" alt="Proyectos" class="projects__img" />
+              <div class="projects__modal">
+                <div>
+                  <span id="Proyecto1" class="projects__subtitle"></span>
+                  <h3 class="projects__title">HTML + SCSS</h3>
+                  <a href="https://csscurse18.vercel.app/index.html" target="_blank"
+                    class="projects__button button button__small">
+                    <i class="ri-link"></i>
+                  </a>
+                  <a href="https://github.com/Slorq-code/CssCurse-18" target="_blank"
+                    class="projects__button button button__small">
+                    <i class="ri-github-fill"></i>
+                  </a>
                 </div>
               </div>
-
-              <div class="skills__area">
-                <h3 id="TituloMobile" class="skills__title"></h3>
-                <div class="skills__box">
-                  <div class="skills__group">
-                    <div class="skills__data">
-                      <i class="ri-checkbox-circle-line"></i>
-                      <div class="skills__element" id="dart">
-                        <h3 class="skills__name">Dart</h3>
-                        <i class="ri-flutter-fill"></i>
-                      </div>
-                    </div>
-                    <div class="skills__data">
-                      <i class="ri-checkbox-circle-line"></i>
-                      <div class="skills__element" id="flutter">
-                        <h3 class="skills__name">Flutter</h3>
-                        <i class="ri-flutter-line"></i>
-                      </div>
+            </article>
+            <article class="projects__card">
+              <img src="assets/img/Proyectos/AppDeliveryReSize.jpg" alt="Proyectos" class="projects__img" />
+              <div class="projects__modal">
+                <div>
+                  <span id="Proyecto2" class="projects__subtitle"></span>
+                  <h3 class="projects__title">HTML + SCSS</h3>
+                  <a href="https://csscurse11.vercel.app" target="_blank" class="projects__button button button__small">
+                    <i class="ri-link"></i>
+                  </a>
+                  <a href="https://github.com/Slorq-code/-CssCurse-11" target="_blank"
+                    class="projects__button button button__small">
+                    <i class="ri-github-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="projects__card">
+              <img src="assets/img/Proyectos/CheetosReSize.jpg" alt="Proyectos" class="projects__img" />
+              <div class="projects__modal">
+                <div>
+                  <span id="Proyecto3" class="projects__subtitle"></span>
+                  <h3 class="projects__title">React.js</h3>
+                  <a href="https://chesterdrop.com/" target="_blank" class="projects__button button button__small">
+                    <i class="ri-link"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="projects__card">
+              <img src="assets/img/Proyectos/NoelReSize.jpg" alt="" class="projects__img" />
+              <div class="projects__modal">
+                <div>
+                  <span id="Proyecto4" class="projects__subtitle"></span>
+                  <h3 class="projects__title">Vue.js</h3>
+                  <a href="https://noel-2023.vercel.app/" target="_blank" class="projects__button button button__small">
+                    <i class="ri-link"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="projects__card">
+              <img src="assets/img/Proyectos/CapturaAppNews.jpg" alt="proyecto" class="projects__img" />
+              <div class="projects__modal">
+                <div>
+                  <span id="Proyecto6" class="projects__subtitle"></span>
+                  <h3 class="projects__title">Dart + Flutter</h3>
+                  <a href="https://www.youtube.com/watch?v=TlBG-_ooO-k" target="_blank"
+                    class="projects__button button button__small">
+                    <i class="ri-link"></i>
+                  </a>
+                  <a href="https://github.com/Slorq-code/App-news" target="_blank"
+                    class="projects__button button button__small">
+                    <i class="ri-github-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="projects__card">
+              <img src="assets/img/Proyectos/CatApp.png" alt="proyecto" class="projects__img" />
+              <div class="projects__modal">
+                <div>
+                  <span id="Proyecto5" class="projects__subtitle"></span>
+                  <h3 class="projects__title">Dart + Flutter</h3>
+                  <a href="https://www.youtube.com/watch?v=qiFoz2mWEx8" target="_blank"
+                    class="projects__button button button__small">
+                    <i class="ri-link"></i>
+                  </a>
+                  <a href="https://github.com/Slorq-code/GatoPragmatico" target="_blank"
+                    class="projects__button button button__small">
+                    <i class="ri-github-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <!--=============== SKILLS ===============-->
+          <div class="skills__content grid" data-content id="skills">
+            <div class="skills__area">
+              <h3 id="TituloFrontend" class="skills__title"></h3>
+              <div class="skills__box">
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <div class="skills__element" id="html">
+                      <h3 class="skills__name">HTML</h3>
+                      <i class="ri-html5-line"></i>
                     </div>
                   </div>
-                  <div class="skills__group">
-                    <div class="skills__data">
-                      <i class="ri-checkbox-circle-line"></i>
-                      <div class="skills__element" id="reactNative">
-                        <h3 class="skills__name">React native</h3>
-                        <i class="ri-reactjs-line"></i>
-                      </div>
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <div class="skills__element" id="css">
+                      <h3 class="skills__name">CSS</h3>
+                      <i class="ri-css3-line"></i>
+                    </div>
+                  </div>
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <div class="skills__element" id="javaScript">
+                      <h3 class="skills__name">JavaScript</h3>
+                      <i class="ri-code-s-slash-line"></i>
                     </div>
                   </div>
                 </div>
-              </div>
-
-              <div class="skills__area">
-                <h3 id="TituloLenguas" class="skills__title"></h3>
-                <div class="skills__box">
-                  <div class="skills__group">
-                    <div class="skills__data">
-                      <i class="ri-checkbox-circle-line"></i>
-                      <div class="skills__element" id="español">
-                        <h3 class="skills__name" id="TextEspañol"></h3>
-                        <i class="ri-chat-smile-3-line"></i>
-                      </div>
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <div class="skills__element" id="react">
+                      <h3 class="skills__name">React.js</h3>
+                      <i class="ri-reactjs-fill"></i>
                     </div>
                   </div>
-                  <div class="skills__group">
-                    <div class="skills__data">
-                      <i class="ri-checkbox-circle-line"></i>
-                      <div class="skills__element" id="english">
-                        <h3 class="skills__name" id="TextIngles"></h3>
-                        <i class="ri-chat-smile-2-line"></i>
-                      </div>
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <div class="skills__element" id="vue">
+                      <h3 class="skills__name">Vue.js</h3>
+                      <i class="ri-vuejs-line"></i>
                     </div>
                   </div>
-                </div>
-              </div>
-
-              <div class="skills__area">
-                <h3 id="TituloHabilidadesBlandas" class="skills__title"></h3>
-                <div class="skills__box">
-                  <div class="skills__group">
-                    <div class="skills__data">
-                      <i class="ri-checkbox-circle-line"></i>
-                      <div class="skills__elementSoftSkill" id="Perseverancia">
-                        <h3 class="skills__name" id="TextPerseverancia"></h3>
-                        <i class="ri-run-line"></i>
-                      </div>
-                    </div>
-
-                    <div class="skills__data">
-                      <i class="ri-checkbox-circle-line"></i>
-                      <div class="skills__elementSoftSkill" id="Compañerismo">
-                        <h3 class="skills__name" id="TextCompañerismo"></h3>
-                        <i class="ri-team-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="skills__group">
-                    <div class="skills__data">
-                      <i class="ri-checkbox-circle-line"></i>
-                      <div class="skills__element" id="Curiosidad">
-                        <h3 class="skills__name" id="TextCuriosidad"></h3>
-                        <i class="ri-psychotherapy-fill"></i>
-                      </div>
-                    </div>
-
-                    <div class="skills__data">
-                      <i class="ri-checkbox-circle-line"></i>
-                      <div class="skills__element" id="Temerario">
-                        <h3 class="skills__name" id="TextTemerario"></h3>
-                        <i class="ri-riding-line"></i>
-                      </div>
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <div class="skills__element" id="git">
+                      <h3 class="skills__name">Git</h3>
+                      <i class="ri-git-branch-line"></i>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!--=============== ABOUT ME ===============-->
 
-            <div class="aboutMe" data-content id="AboutMe">
-              <div class="aboutMe__containerImg">
-                <img
-                  class="aboutMe__container__img"
-                  src="./assets/img/perfil.png"
-                  alt="Yo"
-                />
+            <div class="skills__area">
+              <h3 id="TituloMobile" class="skills__title"></h3>
+              <div class="skills__box">
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <div class="skills__element" id="dart">
+                      <h3 class="skills__name">Dart</h3>
+                      <i class="ri-flutter-fill"></i>
+                    </div>
+                  </div>
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <div class="skills__element" id="flutter">
+                      <h3 class="skills__name">Flutter</h3>
+                      <i class="ri-flutter-line"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <div class="skills__element" id="reactNative">
+                      <h3 class="skills__name">React native</h3>
+                      <i class="ri-reactjs-line"></i>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="aboutMe__containerOptions">
-                <h2 id="TituloTextoSobreMi"></h2>
-                <div class="aboutMe__container__boxs texto">
-                  <p id="TextoSobremi" class="aboutMe__texto"></p>
-                </div>
-                <div class="aboutMe__container__boxs options">
-                  <div class="aboutMe__optiones piano button__gray" id="piano">
-                    <i class="ri-music-line"></i>
-                    <p id="Piano"></p>
-                  </div>
-                  <div class="aboutMe__optiones libros button__gray" id="books">
-                    <i class="ri-git-repository-line"></i>
-                    <p id="Lectura"></p>
-                  </div>
-                  <div
-                    class="aboutMe__optiones actividades button__gray"
-                    id="sports"
-                  >
-                    <i class="ri-basketball-line"></i>
-                    <p id="Deporte"></p>
+            </div>
+
+            <div class="skills__area">
+              <h3 id="TituloLenguas" class="skills__title"></h3>
+              <div class="skills__box">
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <div class="skills__element" id="español">
+                      <h3 class="skills__name" id="TextEspañol"></h3>
+                      <i class="ri-chat-smile-3-line"></i>
+                    </div>
                   </div>
                 </div>
-                <div class="aboutMe__container__boxs">
-                  <div
-                    id="BotonDeContacto"
-                    class="button"
-                    onclick="scrollTopAndAnimate('element-to-animate1','element-to-animate2','element-to-animate3','element-to-animate5',)"
-                  ></div>
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <div class="skills__element" id="english">
+                      <h3 class="skills__name" id="TextIngles"></h3>
+                      <i class="ri-chat-smile-2-line"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills__area">
+              <h3 id="TituloHabilidadesBlandas" class="skills__title"></h3>
+              <div class="skills__box">
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <div class="skills__elementSoftSkill" id="Perseverancia">
+                      <h3 class="skills__name" id="TextPerseverancia"></h3>
+                      <i class="ri-run-line"></i>
+                    </div>
+                  </div>
+
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <div class="skills__elementSoftSkill" id="Compañerismo">
+                      <h3 class="skills__name" id="TextCompañerismo"></h3>
+                      <i class="ri-team-fill"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <div class="skills__element" id="Curiosidad">
+                      <h3 class="skills__name" id="TextCuriosidad"></h3>
+                      <i class="ri-psychotherapy-fill"></i>
+                    </div>
+                  </div>
+
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <div class="skills__element" id="Temerario">
+                      <h3 class="skills__name" id="TextTemerario"></h3>
+                      <i class="ri-riding-line"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-      </main>
-    </div>
-    <!--=============== FOOTER ===============-->
-    <footer class="footer container">
-      <span class="footer__copy">
-        &#169; Andrés F. Rodríguez A. | <span id="TextoFooter"></span>
-      </span>
-    </footer>
-    <!--=============== SKILLS MODALS ===============-->
-    <div class="skills__modal" id="skills-modal-javascript">
-      <div class="skills__modal__container">
-        <i class="ri-close-circle-line" id="closeJavascript"></i>
-        <img
-          src="./assets//img/JavaScript_HackerRank_image.jpg"
-          alt="Certificado"
-        />
-      </div>
-    </div>
-    <div class="skills__modal" id="skills-modal-css">
-      <div class="skills__modal__container">
-        <i class="ri-close-circle-line" id="closeCss"></i>
-        <img src="./assets/img/UdemyCSS.jpg" alt="Certificado" />
-      </div>
-    </div>
-    <div class="skills__modal" id="skills-modal-html">
-      <div class="skills__modal__container">
-        <i class="ri-close-circle-line" id="closeHtml"></i>
-        <img
-          src="./assets/img/CertificadoDeFinalizacion_IntegracionHTMLesencial.jpg"
-          alt="Certificado"
-        />
-      </div>
-    </div>
-    <div class="skills__modal" id="skills-modal-react">
-      <div class="skills__modal__container">
-        <i class="ri-close-circle-line" id="closeReact"></i>
-        <img src="./assets/img/UdemyReact.jpg" alt="Certificado" />
-      </div>
-    </div>
-    <div class="skills__modal" id="skills-modal-vue">
-      <div class="skills__modal__container">
-        <i class="ri-close-circle-line" id="closeVue"></i>
-        <img src="./assets/img/VueUdemyAndres.jpg" alt="Certificado" />
-      </div>
-    </div>
-    <div class="skills__modal" id="skills-modal-git">
-      <div class="skills__modal__container">
-        <i class="ri-close-circle-line" id="closeGit"></i>
-        <img src="./assets/img/Academlo_page-0001.jpg" alt="Certificado" />
-      </div>
-    </div>
-    <div class="skills__modal" id="skills-modal-dart">
-      <div class="skills__modal__container">
-        <i class="ri-close-circle-line" id="closeDart"></i>
-        <img src="./assets/img/DartUdemyAndres.jpg" alt="Certificado" />
-      </div>
-    </div>
-    <div class="skills__modal" id="skills-modal-flutter">
-      <div class="skills__modal__container">
-        <i class="ri-close-circle-line" id="closeFlutter"></i>
-        <img src="./assets/img/FlutterIntermedio.jpg" alt="Certificado" />
-      </div>
-    </div>
-    <div class="skills__modal" id="skills-modal-reactNative">
-      <div class="skills__modal__container">
-        <i class="ri-close-circle-line" id="closeReactNative"></i>
-        <img src="./assets/img/MisionTicMobile1.jpg" alt="Certificado" />
-      </div>
-    </div>
-    <div class="skills__modal" id="skills-modal-English">
-      <div class="skills__modal__containerEnglish">
-        <i class="ri-close-circle-line" id="closeEnglish"></i>
-        <img src="./assets/img/ColomboB2.jpg" alt="Certificado" />
-      </div>
-    </div>
-    <div class="skills__modal" id="skills-modal-Español">
-      <div class="skills__modal__containerEspañol">
-        <p id="SpamEspañol"></p>
-        <i class="ri-close-circle-line" id="closeEspañol"></i>
-      </div>
-    </div>
+          <!--=============== ABOUT ME ===============-->
 
-    <div class="skills__modal" id="skills-modal-compañerismo">
-      <div class="skills__modal__containerEnglish">
-        <i class="ri-close-circle-line" id="closeCompañerismo"></i>
-        <img src="./assets/img/compañerismo.jpg" alt="Photo" />
-      </div>
-    </div>
-    <div class="skills__modal" id="skills-modal-Perseverancia">
-      <div class="skills__modal__containerEnglish">
-        <i class="ri-close-circle-line" id="closePerseverancia"></i>
-        <img src="./assets/img/Perseverancia.jpg" alt="Photo" />
-      </div>
-    </div>
-    <div class="skills__modal" id="skills-modal-curiosidad">
-      <div class="skills__modal__containerEnglish">
-        <i class="ri-close-circle-line" id="closeCuriosidad"></i>
-        <img src="./assets/img/curiosidad.jpg" alt="Photo" />
-      </div>
-    </div>
-    <div class="skills__modal" id="skills-modal-daredevil">
-      <div class="skills__modal__containerEnglish">
-        <i class="ri-close-circle-line" id="closeDareDevil"></i>
-        <img src="./assets/img/daredevil.png" alt="Photo" />
-      </div>
-    </div>
-
-    <!--=============== ABOUT ME MODALS ===============-->
-
-    <div class="aboutMe__modal" id="aboutMe-modal-piano">
-      <div class="aboutMe__modal__container">
-        <i class="ri-close-circle-line" id="closePiano"></i>
-        <div class="aboutMe__modal__content">
-          <div class="pianoText">
-            <p id="PianoTexto"></p>
+          <div class="aboutMe" data-content id="AboutMe">
+            <div class="aboutMe__containerImg">
+              <img class="aboutMe__container__img" src="./assets/img/perfil.png" alt="Yo" />
+            </div>
+            <div class="aboutMe__containerOptions">
+              <h2 id="TituloTextoSobreMi"></h2>
+              <div class="aboutMe__container__boxs texto">
+                <p id="TextoSobremi" class="aboutMe__texto"></p>
+              </div>
+              <div class="aboutMe__container__boxs options">
+                <div class="aboutMe__optiones piano button__gray" id="piano">
+                  <i class="ri-music-line"></i>
+                  <p id="Piano"></p>
+                </div>
+                <div class="aboutMe__optiones libros button__gray" id="books">
+                  <i class="ri-git-repository-line"></i>
+                  <p id="Lectura"></p>
+                </div>
+                <div class="aboutMe__optiones actividades button__gray" id="sports">
+                  <i class="ri-basketball-line"></i>
+                  <p id="Deporte"></p>
+                </div>
+              </div>
+              <div class="aboutMe__container__boxs">
+                <div id="BotonDeContacto" class="button"
+                  onclick="scrollTopAndAnimate('element-to-animate1','element-to-animate2','element-to-animate3','element-to-animate5',)">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <iframe
-          width="280"
-          height="500"
-          src="https://www.youtube.com/embed/nTJJsGtAOos?start=0"
-          title="YouTube video player"
-          frameborder="0"
-          autoplay="1"
-          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
+      </section>
+    </main>
+  </div>
+  <!--=============== FOOTER ===============-->
+  <footer class="footer container">
+    <span class="footer__copy">
+      &#169; Andrés F. Rodríguez A. | <span id="TextoFooter"></span>
+    </span>
+  </footer>
+  <!--=============== SKILLS MODALS ===============-->
+  <div class="skills__modal" id="skills-modal-javascript">
+    <div class="skills__modal__container">
+      <i class="ri-close-circle-line" id="closeJavascript"></i>
+      <img src="./assets//img/JavaScript_HackerRank_image.jpg" alt="Certificado" />
+    </div>
+  </div>
+  <div class="skills__modal" id="skills-modal-css">
+    <div class="skills__modal__container">
+      <i class="ri-close-circle-line" id="closeCss"></i>
+      <img src="./assets/img/UdemyCSS.jpg" alt="Certificado" />
+    </div>
+  </div>
+  <div class="skills__modal" id="skills-modal-html">
+    <div class="skills__modal__container">
+      <i class="ri-close-circle-line" id="closeHtml"></i>
+      <img src="./assets/img/CertificadoDeFinalizacion_IntegracionHTMLesencial.jpg" alt="Certificado" />
+    </div>
+  </div>
+  <div class="skills__modal" id="skills-modal-react">
+    <div class="skills__modal__container">
+      <i class="ri-close-circle-line" id="closeReact"></i>
+      <img src="./assets/img/UdemyReact.jpg" alt="Certificado" />
+    </div>
+  </div>
+  <div class="skills__modal" id="skills-modal-vue">
+    <div class="skills__modal__container">
+      <i class="ri-close-circle-line" id="closeVue"></i>
+      <img src="./assets/img/VueUdemyAndres.jpg" alt="Certificado" />
+    </div>
+  </div>
+  <div class="skills__modal" id="skills-modal-git">
+    <div class="skills__modal__container">
+      <i class="ri-close-circle-line" id="closeGit"></i>
+      <img src="./assets/img/Academlo_page-0001.jpg" alt="Certificado" />
+    </div>
+  </div>
+  <div class="skills__modal" id="skills-modal-dart">
+    <div class="skills__modal__container">
+      <i class="ri-close-circle-line" id="closeDart"></i>
+      <img src="./assets/img/DartUdemyAndres.jpg" alt="Certificado" />
+    </div>
+  </div>
+  <div class="skills__modal" id="skills-modal-flutter">
+    <div class="skills__modal__container">
+      <i class="ri-close-circle-line" id="closeFlutter"></i>
+      <img src="./assets/img/FlutterIntermedio.jpg" alt="Certificado" />
+    </div>
+  </div>
+  <div class="skills__modal" id="skills-modal-reactNative">
+    <div class="skills__modal__container">
+      <i class="ri-close-circle-line" id="closeReactNative"></i>
+      <img src="./assets/img/MisionTicMobile1.jpg" alt="Certificado" />
+    </div>
+  </div>
+  <div class="skills__modal" id="skills-modal-English">
+    <div class="skills__modal__containerEnglish">
+      <i class="ri-close-circle-line" id="closeEnglish"></i>
+      <img src="./assets/img/ColomboB2.jpg" alt="Certificado" />
+    </div>
+  </div>
+  <div class="skills__modal" id="skills-modal-Español">
+    <div class="skills__modal__containerEspañol">
+      <p id="SpamEspañol"></p>
+      <i class="ri-close-circle-line" id="closeEspañol"></i>
+    </div>
+  </div>
+
+  <div class="skills__modal" id="skills-modal-compañerismo">
+    <div class="skills__modal__containerEnglish">
+      <i class="ri-close-circle-line" id="closeCompañerismo"></i>
+      <img src="./assets/img/compañerismo.jpg" alt="Photo" />
+    </div>
+  </div>
+  <div class="skills__modal" id="skills-modal-Perseverancia">
+    <div class="skills__modal__containerEnglish">
+      <i class="ri-close-circle-line" id="closePerseverancia"></i>
+      <img src="./assets/img/Perseverancia.jpg" alt="Photo" />
+    </div>
+  </div>
+  <div class="skills__modal" id="skills-modal-curiosidad">
+    <div class="skills__modal__containerEnglish">
+      <i class="ri-close-circle-line" id="closeCuriosidad"></i>
+      <img src="./assets/img/curiosidad.jpg" alt="Photo" />
+    </div>
+  </div>
+  <div class="skills__modal" id="skills-modal-daredevil">
+    <div class="skills__modal__containerEnglish">
+      <i class="ri-close-circle-line" id="closeDareDevil"></i>
+      <img src="./assets/img/daredevil.png" alt="Photo" />
+    </div>
+  </div>
+
+  <!--=============== ABOUT ME MODALS ===============-->
+
+  <div class="aboutMe__modal" id="aboutMe-modal-piano">
+    <div class="aboutMe__modal__container">
+      <i class="ri-close-circle-line" id="closePiano"></i>
+      <div class="aboutMe__modal__content">
+        <div class="pianoText">
+          <p id="PianoTexto"></p>
+        </div>
+      </div>
+      <iframe width="280" height="500" src="https://www.youtube.com/embed/nTJJsGtAOos?start=0"
+        title="YouTube video player" frameborder="0" autoplay="1"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="aboutMe__modal" id="aboutMe-modal-books">
+    <div class="aboutMe__modal__container">
+      <i class="ri-close-circle-line" id="closeBooks"></i>
+      <div class="bookshelf">
+        <div class="book1">
+          <div class="front"></div>
+        </div>
+        <div class="review">
+          <p id="LecturaTexto1"></p>
+        </div>
+      </div>
+      <div class="bookshelf bookshelfResponsive">
+        <div class="book2">
+          <div class="front"></div>
+        </div>
+        <div class="review">
+          <p id="LecturaTexto2"></p>
+        </div>
       </div>
     </div>
+  </div>
 
-    <div class="aboutMe__modal" id="aboutMe-modal-books">
-      <div class="aboutMe__modal__container">
-        <i class="ri-close-circle-line" id="closeBooks"></i>
-        <div class="bookshelf">
-          <div class="book1">
-            <div class="front"></div>
-          </div>
-          <div class="review">
-            <p id="LecturaTexto1"></p>
-          </div>
+  <div class="aboutMe__modal" id="aboutMe-modal-sports">
+    <div class="aboutMe__modal__container">
+      <i class="ri-close-circle-line" id="closeSports"></i>
+      <div class="sports">
+        <div class="sportsText">
+          <p>this section is under constructionnn</p>
         </div>
-        <div class="bookshelf bookshelfResponsive">
-          <div class="book2">
-            <div class="front"></div>
-          </div>
-          <div class="review">
-            <p id="LecturaTexto2"></p>
-          </div>
-        </div>
+        <img src="./assets/img/EnProceso.png" alt="on process" />
       </div>
     </div>
+  </div>
 
-    <div class="aboutMe__modal" id="aboutMe-modal-sports">
-      <div class="aboutMe__modal__container">
-        <i class="ri-close-circle-line" id="closeSports"></i>
-        <div class="sports">
-          <div class="sportsText">
-            <p>this section is under constructionnn</p>
-          </div>
-          <img src="./assets/img/EnProceso.png" alt="on process" />
-        </div>
-      </div>
-    </div>
+  <script src="assets/js/index.js"></script>
 
-    
-    
-    <!--=============== SCROLLREVEAL ===============-->
-    <script src="assets/js/scrollreveal.min.js"></script>
-    
-    <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
+</body>
 
-    <!--=============== Translation JS ===============-->
-    <script src="assets/js/translation.js"></script>
-
-    <!--=============== modal JS ===============-->
-    <script src="assets/js/modal.js"></script>
-
-    <!--=============== modal JS ===============-->
-    <script src="assets/js/theme.js"></script>
-
-  </body>
 </html>
