@@ -74,7 +74,9 @@ body {
     font-family: 'poppins', sans-serif;
 }
 
-
+#modalOverflow {
+    height: 100vh;
+}
 
 .allBody {
     position: relative;
@@ -85,12 +87,13 @@ body {
     height: 100vh;
 }
 
-.translation-theme {
+.translation-theme-login {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
+
 
 .es,
 .en {
@@ -170,16 +173,17 @@ body {
 }
 
 
-.translation-theme {
+.translation-theme-login {
     position: absolute;
     top: 1.5rem;
     left: 2rem;
     font-size: 1rem;
     color: var(--title-color);
     transition: .3s;
+    /* z-index: 9; */
 }
 
-.translation-theme:hover {
+.translation-theme-login:hover {
     color: var(--first-color);
 }
 
@@ -224,6 +228,8 @@ body {
 
 .backHomeModal {
     position: absolute;
+    top: 1.5rem;
+    left: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -479,21 +485,15 @@ body {
     background-color: var(--body-color) !important;
 }
 
-
-
-
 @media screen and ( max-width: 970px ) {
     .calendario {
         grid-template-columns: repeat(4, 1fr);
         width: 500px;
     }
-
     .calendario div {
         padding: 1px;
     }
 }
-
-
 
 .calendario {
     display: grid;
