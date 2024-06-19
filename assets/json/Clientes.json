@@ -14,5 +14,13 @@
         "cronograma":"se estan generando actualizaciones de bla bla bla",
         "tentativa": 28,
         "tentativaCompleta":"16/11/2023"
+    },
+    "Hector" : {
+        "apellido": "M.",
+        "tipoProyecto":"FLUTTER",
+        "status":"ESTUDIANDO CODIGO",
+        "cronograma":"Estudio del codigo entregado",
+        "tentativa": 28,
+        "tentativaCompleta":"16/11/2023"
     }
 }
