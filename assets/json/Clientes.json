@@ -18,9 +18,9 @@
     "Hector" : {
         "apellido": "M.",
         "tipoProyecto":"FLUTTER",
-        "status":"ESTUDIANDO CODIGO",
+        "status":"ESTUDIANDO EL CODIGO",
         "cronograma":"Abrir los archivos y configurar el entorno para emular ubicacion en PERU y poder hacer pruebas manuales y asi evaluar el estado del codigo",
-        "tentativa": "29",
-        "tentativaCompleta":"16/11/2023"
+        "tentativa": "30",
+        "tentativaCompleta":"Hoy en la noche"
     }
 }
