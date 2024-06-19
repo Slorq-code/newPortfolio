@@ -19,8 +19,8 @@
         "apellido": "M.",
         "tipoProyecto":"FLUTTER",
         "status":"ESTUDIANDO CODIGO",
-        "cronograma":"Estudio del codigo entregado",
-        "tentativa": 28,
+        "cronograma":"Abrir los archivos y configurar el entorno para emular ubicacion en PERU y poder hacer pruebas manuales y asi evaluar el estado del codigo",
+        "tentativa": 29,
         "tentativaCompleta":"16/11/2023"
     }
 }
