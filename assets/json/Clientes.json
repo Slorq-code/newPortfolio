@@ -18,9 +18,9 @@
     "Hector" : {
         "apellido": "M.",
         "tipoProyecto":"FLUTTER",
-        "status":"Solucionando compatibilidad entre versiones",
-        "cronograma":"verificando todas las dependencias internas y sus versiones para modificarlas hasta que sean estables entre ellas",
-        "tentativa": "30",
-        "tentativaCompleta":"22/06/2024"
+        "status":"null",
+        "cronograma":"FINALIZADO A RESPONSABILIDAD DEL CLIENTE",
+        "tentativa": "null",
+        "tentativaCompleta":"null"
     }
 }
